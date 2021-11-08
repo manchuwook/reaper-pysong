@@ -21,7 +21,8 @@ Scripts written in python for reaper to generate a template with composer FX
 * Tries to name the takes (currently not working)
 * Groups by song part type (Verse, Chorus, Intro, etc.)
 
-# replicate_parts.py (NOTE: uses me2beats_Pool active takes of selected items.lua)
+# replicate_parts.py
+* (NOTE: uses me2beats_Pool active takes of selected items.lua)
 * Loops through midi items and re-pools groups
 * First available midi item take gets the source
 
