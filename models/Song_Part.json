@@ -1,0 +1,61 @@
+{
+  "title": "Song Part",
+  "type": "object",
+  "description": "The song part in terms of the structure component and length",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "Pre-Intro",
+        "Intro",
+        "Pre-Verse",
+        "Verse",
+        "Pre-Chorus",
+        "Chorus",
+        "Pre-Instrumental",
+        "Instrumental",
+        "Pre-Breakdown",
+        "Breakdown",
+        "Drop",
+        "Pre-Outro",
+        "Outro"
+      ],
+      "description": "Song structure type"
+    },
+    "color": {
+      "type": "string",
+      "description": "Lowercase color name used to generate hues"
+    },
+    "bars": {
+      "type": "integer",
+      "multipleOf": 4,
+      "description": "The number of bars (measures) in the song part.  Multiples of 4"
+    },
+    "min": {
+      "type": "integer",
+      "description": "Minimum number of bars",
+      "minimum": 4,
+      "maximum": 4,
+      "multipleOf": 4
+    },
+    "max": {
+      "type": "integer",
+      "description": "Maximum number of bars",
+      "minimum": 4,
+      "maximum": 32,
+      "multipleOf": 4
+    },
+    "index": {
+      "type": "string",
+      "description": "Index of the related region"
+    },
+    "variation": {
+      "type": "boolean",
+      "description": "part is a variation on a theme"
+    }
+  },
+  "required": [
+    "type",
+    "color"
+  ]
+}

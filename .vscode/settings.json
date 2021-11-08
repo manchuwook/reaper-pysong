@@ -1,0 +1,23 @@
+{
+    "python.defaultInterpreterPath": "C:\\Python39",
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/*.song-structure.json"
+            ],
+            "url": "/models/Song.json"
+        },
+        {
+            "fileMatch": [
+                "/*.song-part.json"
+            ],
+            "url": "/models/Song_Part.json"
+        },
+        {
+            "fileMatch": [
+                "/song-library.json"
+            ],
+            "url": "/models/Song_Library.json"
+        }
+    ]
+}

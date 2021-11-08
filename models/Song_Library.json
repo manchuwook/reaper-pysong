@@ -1,0 +1,17 @@
+{
+  "title": "Song Library",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Pattern or Song Structure Name"
+      },
+      "structure": {
+        "$ref": "./Song.json"
+      }
+    }
+  },
+  "description": "Collection of pre-made song structures"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Song",
+  "type": "array",
+  "description": "A collection of structural song parts",
+  "items": {
+    "allOf": [
+      {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      {
+        "$ref": "./Song_Part.json"
+      }
+    ]
+  }
+}
