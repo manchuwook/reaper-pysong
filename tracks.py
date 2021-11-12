@@ -4,7 +4,7 @@ import logging
 import random
 import math
 import reapy
-from pydash import _
+from pydash import chain, for_each
 from reapy.core.track.track import Track
 from colors import randColorByHue
 from reapy import reascript_api as RPR
@@ -16,25 +16,34 @@ def rprint(msg):
 
 
 battery = 'Battery 4 (x86)'
-captainMelody = 'Captain Melody (Mixed In Key LLC)'
-captainDeep = 'Captain Deep (Mixed In Key LLC)'
-captainBeat = 'Captain Beat (Mixed In Key LLC)'
-captainChords = 'Captain Chords (Mixed In Key LLC)'
 chordPotion = 'ChordPotion'
 melodicFlow = 'MelodicFlow'
 reaSynth = 'ReaSynth'
 reaComp = 'ReaComp'
 reaEq = 'ReaEQ'
+
+# region Captain Composer Plug-ins
+captainMelody = 'Captain Melody (Mixed In Key LLC)'
+captainDeep = 'Captain Deep (Mixed In Key LLC)'
+captainBeat = 'Captain Beat (Mixed In Key LLC)'
+captainChords = 'Captain Chords (Mixed In Key LLC)'
+# endregion
+
+# region Orb Option
 orbArp = 'Orb Arpeggios'
 orbBass = 'Orb Bass'
 orbChords = 'Orb Chords'
 orbMelody = 'Orb Melody'
+# endregion
 
 
-def extendTrack(track: reapy.Track, idx, collection):
-    track.set_info_value('D_VOL', -5)
+def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
+    """Add Processing or Composition FX, set icons, output routing"""
+    tVol: float = track.get_info_value('D_VOL')
+    track.set_info_value('D_VOL', tVol * 0.5)
+
     track.color = randColorByHue('red')
-    # Orb
+    # region Orb Composer
     if track.name == 'Chords - Orb':
         track.set_info_string('P_ICON', 'piano.png')
         oChords = track.add_fx(name=orbChords)
@@ -50,7 +59,8 @@ def extendTrack(track: reapy.Track, idx, collection):
     if track.name == 'Melody - Orb':
         track.set_info_string('P_ICON', 'male_head.png')
         oMelody = track.add_fx(name=orbMelody)
-    # Captain
+    # endregion
+    # region Captain Composer (Default)
     if track.name == 'Melody':
         track.set_info_string('P_ICON', 'male_head.png')
         cptMelody = track.add_fx(name=captainMelody)
@@ -69,11 +79,14 @@ def extendTrack(track: reapy.Track, idx, collection):
         track.select()
         RPR.ReorderSelectedTracks(0, 0)
         track.unselect()
+    # endregion
+
     if track.name == 'Percussion':
         track.set_info_string('P_ICON', 'drums.png')
         btry = track.add_fx(name=battery)
-    # Set only icons
-    if track.name == 'FX1' or track.name == 'FX2' or track.name == 'FX3':
+
+    # region Set only icons
+    if track.name in ['FX', 'FX1', 'FX2', 'FX3']:
         track.set_info_string('P_ICON', 'synthbass.png')
     if track.name == 'Harmony':
         track.set_info_string('P_ICON', 'female_head.png')
@@ -85,13 +98,11 @@ def extendTrack(track: reapy.Track, idx, collection):
         track.set_info_string('P_ICON', 'cowbell.png')
     if track.name == 'Sub':
         track.set_info_string('P_ICON', 'double_bass.png')
+    # endregion
+
     for idx, fx in enumerate(track.fxs):
         xFx: reapy.FX = fx
         fxParams: reapy.FXParamsList = xFx.params
-        # for i in range(0, xFx.n_params):
-        # rprint(fxParams[i].name)
-
-        # rprint(xFx.name)
     track.add_fx(name=reaComp)
     track.add_fx(name=reaEq)
 
@@ -115,7 +126,9 @@ def makeTracks(project: reapy.Project, composer='Captain'):
 
     # Get the first FX1 and insert a track before it
     fx1 = project.tracks['FX1']
+    # Add the FX track above FX1
     fx = project.add_track(fx1.index, 'FX')
+    # Add the other FX tracks
     fx2 = project.tracks['FX2']
     fx3 = project.tracks['FX3']
 
