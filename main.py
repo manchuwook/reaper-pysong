@@ -1,7 +1,7 @@
 import logging
 import json
 import reapy
-import song_library
+from song_library import SongLibraryElement, SongPart, song_library_from_dict
 from parts_item import addMidiItems
 from tracks import makeTracks
 from colors import randColorByHue
@@ -31,17 +31,17 @@ def main():
     lf = open(r's:/song-patterns.json')
     data = lf.read()
     j = json.loads(data)
-    structures = song_library.structures_from_dict(j)
+    song: SongLibraryElement = song_library_from_dict(j)[2]
 
     # Create a reference region map
     # Metadata isn't available in-app for grouping and pools
-    refRegion: list[song_library.Part] = []
+    refRegion: list[SongPart] = []
 
     # Regions are cumulative and added in seconds
     accumulator: float = 0.0
-    for idx, part in enumerate(structures[2].structure):
+    for idx, part in enumerate(song.structure):
         # Region colors are are grouped by part
-        p: song_library.Part = part
+        p: SongPart = part
 
         # Each song has a BPM and may start with different sets of seconds
         out_time = project.beats_to_time(4)
@@ -67,10 +67,6 @@ def main():
 
     # Stop blocking the undo history
     project.end_undo_block("Null Angel Template")
-
-    # Debugging project length
-    # len = reapy.reascript_api.GetProjectLength(project)
-    # rprint(len)
 
 
 def rprint(msg):

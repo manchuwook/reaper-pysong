@@ -4,7 +4,7 @@
 #
 # and then, to convert JSON from a string, do
 #
-#     result = coordinate_from_dict(json.loads(json_string))
+#     result = song_library_from_dict(json.loads(json_string))
 
 from enum import Enum
 from typing import Optional, Any, List, TypeVar, Type, Callable, cast
@@ -33,13 +33,13 @@ def from_union(fs, x):
     assert False
 
 
-def from_bool(x: Any) -> Any:
-    assert isinstance(x, bool)
+def from_int(x: Any) -> int:
+    assert isinstance(x, int) and not isinstance(x, bool)
     return x
 
 
-def from_int(x: Any) -> int:
-    assert isinstance(x, int) and not isinstance(x, bool)
+def from_bool(x: Any) -> bool:
+    assert isinstance(x, bool)
     return x
 
 
@@ -61,112 +61,120 @@ def to_class(c: Type[T], x: Any) -> dict:
 class TypeEnum(Enum):
     """Song structure type"""
     BREAKDOWN = "Breakdown"
+    """Notes are more drawn out or minimally dispersed"""
+    BRIDGE = "Bridge"
+    """Let's the listener know they are towards the end of the song """
     CHORUS = "Chorus"
+    """Contains the hook and is typically repetitive"""
     DROP = "Drop"
+    """Post-crescendo excited action"""
     INSTRUMENTAL = "Instrumental"
+    """Section with no vocals"""
     INTRO = "Intro"
+    """Beginning of the song, introducing themes and for a buildup"""
     OUTRO = "Outro"
+    """Descending action of the song"""
     PRE_BREAKDOWN = "Pre-Breakdown"
     PRE_CHORUS = "Pre-Chorus"
+    """Transition from another part through voicing"""
     PRE_INSTRUMENTAL = "Pre-Instrumental"
+    """Build-up to the instrumental section"""
     PRE_INTRO = "Pre-Intro"
+    """Sound effects or soundbyte"""
     PRE_OUTRO = "Pre-Outro"
+    """Indicate that the song is ending"""
     PRE_VERSE = "Pre-Verse"
+    """Transition from the intro or chorus to the verse"""
     VERSE = "Verse"
-    BRIDGE = "Bridge"
+    """Repeated section of a song that typically features a new set of lyrics on each repetition"""
 
 
-class Part:
-    name: Optional[str]
+class SongPart:
     """The song part in terms of the structure component and length"""
-
+    name: Optional[str]
+    """The name of the song style"""
     bars: Optional[int]
     """The number of bars (measures) in the song part.  Multiples of 4"""
-
     color: str
     """Lowercase color name used to generate hues"""
-
+    index: Optional[str]
+    """Index of the related region"""
     max: Optional[int]
     """Maximum number of bars"""
-
     min: Optional[int]
     """Minimum number of bars"""
-
     type: TypeEnum
     """Song structure type"""
+    variation: Optional[bool]
+    """part is a variation on a theme"""
 
-    index: int
-    """Region Number"""
-
-    source: bool
-    """Use this as the source for pooled items"""
-
-    def __init__(self, name: Optional[str], bars: Optional[int], color: str, max: Optional[int], min: Optional[int], type: TypeEnum, index: Optional[int], source: Optional[bool]) -> None:
+    def __init__(self, name: Optional[str], bars: Optional[int], color: str, index: Optional[str], max: Optional[int], min: Optional[int], type: TypeEnum, variation: Optional[bool]) -> None:
         self.name = name
         self.bars = bars
         self.color = color
+        self.index = index
         self.max = max
         self.min = min
         self.type = type
-        self.index = index
-        self.source = source
+        self.variation = variation
 
     @staticmethod
-    def from_dict(obj: Any) -> 'Part':
+    def from_dict(obj: Any) -> 'SongPart':
         assert isinstance(obj, dict)
         name = from_union([from_str, from_none], obj.get("name"))
         bars = from_union([from_int, from_none], obj.get("bars"))
         color = from_str(obj.get("color"))
+        index = from_union([from_str, from_none], obj.get("index"))
         max = from_union([from_int, from_none], obj.get("max"))
         min = from_union([from_int, from_none], obj.get("min"))
         type = TypeEnum(obj.get("type"))
-        index = obj.get("index")
-        source = obj.get("source")
-        return Part(name, bars, color, max, min, type, index, source)
+        variation = from_union([from_bool, from_none], obj.get("variation"))
+        return SongPart(name, bars, color, index, max, min, type, variation)
 
     def to_dict(self) -> dict:
         result: dict = {}
         result["name"] = from_union([from_str, from_none], self.name)
         result["bars"] = from_union([from_int, from_none], self.bars)
         result["color"] = from_str(self.color)
+        result["index"] = from_union([from_str, from_none], self.index)
         result["max"] = from_union([from_int, from_none], self.max)
         result["min"] = from_union([from_int, from_none], self.min)
         result["type"] = to_enum(TypeEnum, self.type)
-        result["index"] = self.index
-        result["source"] = self.source
+        result["variation"] = from_union(
+            [from_bool, from_none], self.variation)
         return result
 
 
-class SongStructure:
-    """Collection of pre-made song structures"""
-    """Pattern or Song Structure Name"""
+class SongLibraryElement:
+    """Song consisting of a name and structures"""
     name: Optional[str]
+    """Pattern or Song Structure Name"""
+    structure: Optional[List[SongPart]]
     """A collection of structural song parts"""
-    structure: Optional[List[Part]]
 
-    def __init__(self, name: Optional[str], structure: Optional[List[Part]]) -> None:
+    def __init__(self, name: Optional[str], structure: Optional[List[SongPart]]) -> None:
         self.name = name
         self.structure = structure
 
     @staticmethod
-    def from_dict(obj: Any) -> 'SongStructure':
+    def from_dict(obj: Any) -> 'SongLibraryElement':
         assert isinstance(obj, dict)
         name = from_union([from_str, from_none], obj.get("name"))
         structure = from_union([lambda x: from_list(
-            Part.from_dict, x), from_none], obj.get("structure"))
-        return SongStructure(name, structure)
+            SongPart.from_dict, x), from_none], obj.get("structure"))
+        return SongLibraryElement(name, structure)
 
     def to_dict(self) -> dict:
         result: dict = {}
         result["name"] = from_union([from_str, from_none], self.name)
         result["structure"] = from_union([lambda x: from_list(
-            lambda x: to_class(Part, x), x), from_none], self.structure)
+            lambda x: to_class(SongPart, x), x), from_none], self.structure)
         return result
 
 
-def structures_from_dict(s: Any) -> List[SongStructure]:
-    return from_list(SongStructure.from_dict, s)
+def song_library_from_dict(s: Any) -> List[SongLibraryElement]:
+    return from_list(SongLibraryElement.from_dict, s)
 
 
-def structure_to_dict(x: List[SongStructure]) -> Any:
-    return from_list(lambda x: to_class(SongStructure, x), x)
+def song_library_to_dict(x: List[SongLibraryElement]) -> Any:
+    return from_list(lambda x: to_class(SongLibraryElement, x), x)

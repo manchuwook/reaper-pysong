@@ -4,7 +4,7 @@ import sys
 import logging
 import random
 import math
-from song_library import Part
+from song_library import SongPart
 from typing import Dict, List
 import reapy
 from pydash import _, uniq
@@ -21,7 +21,7 @@ def rprint(msg):
         print(msg)
 
 
-def addMidiItems(project: reapy.Project, refregions: List[Part]):
+def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
     for idx, region in enumerate(project.regions):
         # Even though regions are added in seconds
         # Quantization lets us go back to theory and add items in beats
