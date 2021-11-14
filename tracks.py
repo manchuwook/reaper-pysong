@@ -38,41 +38,32 @@ orbMelody = 'Orb Melody'
 
 
 def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
-    """Add Processing or Composition FX, set icons, output routing"""
+    """Add Processing or Composition FX, output routing"""
     tVol: float = track.get_info_value('D_VOL')
     track.set_info_value('D_VOL', tVol * 0.5)
 
     track.color = randColorByHue('red')
     # region Orb Composer
     if track.name == 'Chords - Orb':
-        track.set_info_string('P_ICON', 'piano.png')
         oChords = track.add_fx(name=orbChords)
     if track.name == 'Arpeggio - Orb':
-        track.set_info_string('P_ICON', 'harp.png')
         oArp = track.add_fx(name=orbArp)
     if track.name == 'Bass - Orb':
-        track.set_info_string('P_ICON', 'bass.png')
         oBass = track.add_fx(name=orbBass)
     if track.name == 'Harmony - Orb':
-        track.set_info_string('P_ICON', 'female_head.png')
         oHarmony = track.add_fx(name=orbMelody)
     if track.name == 'Melody - Orb':
-        track.set_info_string('P_ICON', 'male_head.png')
         oMelody = track.add_fx(name=orbMelody)
     # endregion
     # region Captain Composer (Default)
     if track.name == 'Melody':
-        track.set_info_string('P_ICON', 'male_head.png')
         cptMelody = track.add_fx(name=captainMelody)
     if track.name == 'Bass':
-        track.set_info_string('P_ICON', 'bass.png')
         cptDeep = track.add_fx(name=captainDeep)
     if track.name == 'Arpeggio':
-        track.set_info_string('P_ICON', 'harp.png')
         cp = track.add_fx(name=chordPotion)
         rSynth = track.add_fx(name=reaSynth)
     if track.name == 'Chords - Scratch':
-        track.set_info_string('P_ICON', 'piano.png')
         cptChords = track.add_fx(name=captainChords)
         track.add_send(destination=track.project.tracks['Chords'])
         track.add_send(destination=track.project.tracks['Arpeggio'])
@@ -82,22 +73,15 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
     # endregion
 
     if track.name == 'Percussion':
-        track.set_info_string('P_ICON', 'drums.png')
         btry = track.add_fx(name=battery)
 
-    # region Set only icons
-    if track.name in ['FX', 'FX1', 'FX2', 'FX3']:
-        track.set_info_string('P_ICON', 'synthbass.png')
-    if track.name == 'Harmony':
-        track.set_info_string('P_ICON', 'female_head.png')
-    if track.name == 'Lead':
-        track.set_info_string('P_ICON', 'guitar.png')
-    if track.name == 'Pad':
-        track.set_info_string('P_ICON', 'pads.png')
-    if track.name == 'Rhythmic':
-        track.set_info_string('P_ICON', 'cowbell.png')
-    if track.name == 'Sub':
-        track.set_info_string('P_ICON', 'double_bass.png')
+    # region Do stuff to other tracks
+    # if track.name in ['FX', 'FX1', 'FX2', 'FX3']:
+    # if track.name == 'Harmony':
+    # if track.name == 'Lead':
+    # if track.name == 'Pad':
+    # if track.name == 'Rhythmic':
+    # if track.name == 'Sub':
     # endregion
 
     for idx, fx in enumerate(track.fxs):
@@ -111,11 +95,19 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
 
 def makeTracks(project: reapy.Project, composer='Captain'):
     if(composer == 'Captain'):
-        tracks = ['Chords - Scratch', 'Chords', 'Arpeggio', 'Bass', 'Sub', 'Pad',
-                  'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic', 'Percussion', 'Harmony', 'Melody']
+        tracks = [
+            'Chords - Scratch', 'Chords', 'Arpeggio',
+            'Bass', 'Ambient', 'Sub', 'Pad',
+            'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic',
+            'Percussion', 'Harmony', 'Melody'
+        ]
     if(composer == 'Orb'):
-        tracks = ['Chords - Orb', 'Chords', 'Arpeggio - Orb', 'Bass - Orb', 'Sub', 'Pad',
-                  'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic', 'Percussion', 'Harmony - Orb', 'Melody - Orb']
+        tracks = [
+            'Chords - Orb', 'Chords', 'Arpeggio - Orb',
+            'Bass - Orb', 'Ambient', 'Sub', 'Pad',
+            'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic',
+            'Percussion', 'Harmony - Orb', 'Melody - Orb'
+        ]
     tracks.reverse()
 
     trackList: list = list()
@@ -124,7 +116,7 @@ def makeTracks(project: reapy.Project, composer='Captain'):
         tr: Track = extendTrack(t, idx, project.tracks)
         trackList.append(tr)
 
-    # Get the first FX1 and insert a track before it
+    # Get the first FX1 for insert
     fx1 = project.tracks['FX1']
     # Add the FX track above FX1
     fx = project.add_track(fx1.index, 'FX')

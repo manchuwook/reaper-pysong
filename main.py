@@ -2,6 +2,7 @@ import logging
 import json
 import reapy
 from song_library import SongLibraryElement, SongPart, song_library_from_dict
+from song_structurer import generateStructure
 from parts_item import addMidiItems
 from tracks import makeTracks
 from colors import randColorByHue
@@ -28,10 +29,11 @@ def main():
     project.master_track.set_info_value('P_VOL', mVol * 0.5)
 
     # Song library has a collection of song structures
-    lf = open(r's:/song-patterns.json')
-    data = lf.read()
-    j = json.loads(data)
-    song: SongLibraryElement = song_library_from_dict(j)[2]
+    # lf = open(r's:/song-patterns.json')
+    # data = lf.read()
+    # j = json.loads(data)
+    # song: SongLibraryElement = song_library_from_dict(j)[2]
+    song = generateStructure()
 
     # Create a reference region map
     # Metadata isn't available in-app for grouping and pools
