@@ -84,9 +84,9 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
     # if track.name == 'Sub':
     # endregion
 
-    for idx, fx in enumerate(track.fxs):
-        xFx: reapy.FX = fx
-        fxParams: reapy.FXParamsList = xFx.params
+    # for idx, fx in enumerate(track.fxs):
+    #     xFx: reapy.FX = fx
+    #     fxParams: reapy.FXParamsList = xFx.params
     track.add_fx(name=reaComp)
     track.add_fx(name=reaEq)
 
@@ -96,14 +96,14 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
 def makeTracks(project: reapy.Project, composer='Captain'):
     if(composer == 'Captain'):
         tracks = [
-            'Chords - Scratch', 'Chords', 'Arpeggio',
+            'Chords - Scratch', 'Chords', 'Voicing', 'Arpeggio',
             'Bass', 'Ambient', 'Sub', 'Pad',
             'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic',
             'Percussion', 'Harmony', 'Melody'
         ]
     if(composer == 'Orb'):
         tracks = [
-            'Chords - Orb', 'Chords', 'Arpeggio - Orb',
+            'Chords - Orb', 'Chords', 'Voicing', 'Arpeggio - Orb',
             'Bass - Orb', 'Ambient', 'Sub', 'Pad',
             'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic',
             'Percussion', 'Harmony - Orb', 'Melody - Orb'
@@ -115,6 +115,14 @@ def makeTracks(project: reapy.Project, composer='Captain'):
         t = project.add_track(name=track)
         tr: Track = extendTrack(t, idx, project.tracks)
         trackList.append(tr)
+
+    # chain(tracks).flow(
+    #     lambda t:
+    #         project.add_track(name=t)
+    # ).flow(
+    #     lambda at, idx:
+    #         extendTrack(at, idx, project.tracks)
+    # ).value()
 
     # Get the first FX1 for insert
     fx1 = project.tracks['FX1']

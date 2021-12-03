@@ -139,6 +139,7 @@ def generateStructure():
     ).flatten_deep().compact().value()
 
     part: song_library.SongPart
+    # Naming of the parts (Verse 1, Chorus 1, Verse 2, Chorus 2, etc.)
     for idx, part in enumerate(structures):
         # Create a copy of the part to swap out base classes
         p: song_library.SongPart = song_library.SongPart(
