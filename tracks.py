@@ -15,12 +15,15 @@ def rprint(msg):
         print(msg)
 
 
-battery = 'Battery 4 (x86)'
+battery = 'Battery 4 (Native Instruments GmbH) (32 out)'
 chordPotion = 'ChordPotion'
 melodicFlow = 'MelodicFlow'
 reaSynth = 'ReaSynth'
 reaComp = 'ReaComp'
 reaEq = 'ReaEQ'
+
+# Libraries would need to be set in Kontakt after loading
+kontakt = 'Kontakt (Native Instruments) (64 out)'
 
 # region Captain Composer Plug-ins
 captainMelody = 'Captain Melody (Mixed In Key LLC)'
@@ -67,10 +70,14 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
         cptChords = track.add_fx(name=captainChords)
         track.add_send(destination=track.project.tracks['Chords'])
         track.add_send(destination=track.project.tracks['Arpeggio'])
+        track.add_send(destination=track.project.tracks['Imitone'])
         track.select()
         RPR.ReorderSelectedTracks(0, 0)
         track.unselect()
     # endregion
+
+    if track.name == 'Rise and Hit':
+        kntkt = track.add_fx(name=kontakt)
 
     if track.name == 'Percussion':
         btry = track.add_fx(name=battery)
@@ -84,6 +91,10 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
     # if track.name == 'Sub':
     # endregion
 
+    if track.name == 'Imitone':
+        track.add_fx(name=melodicFlow)
+        track.add_fx(name=reaSynth)
+
     # for idx, fx in enumerate(track.fxs):
     #     xFx: reapy.FX = fx
     #     fxParams: reapy.FXParamsList = xFx.params
@@ -96,17 +107,19 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
 def makeTracks(project: reapy.Project, composer='Captain'):
     if(composer == 'Captain'):
         tracks = [
-            'Chords - Scratch', 'Chords', 'Voicing', 'Arpeggio',
+            'Chords - Scratch', 'Chords', 'Arpeggio',
             'Bass', 'Ambient', 'Sub', 'Pad',
-            'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic',
-            'Percussion', 'Harmony', 'Melody'
+            'Lead', 'FX1', 'FX2', 'FX3', 'Rise and Hit', 'Rhythmic',
+            'Percussion', 'Harmony', 'Melody',
+            'Imitone'
         ]
     if(composer == 'Orb'):
         tracks = [
-            'Chords - Orb', 'Chords', 'Voicing', 'Arpeggio - Orb',
+            'Chords - Orb', 'Chords', 'Arpeggio - Orb',
             'Bass - Orb', 'Ambient', 'Sub', 'Pad',
-            'Lead', 'FX1', 'FX2', 'FX3', 'Rhythmic',
-            'Percussion', 'Harmony - Orb', 'Melody - Orb'
+            'Lead', 'FX1', 'FX2', 'FX3', 'Rise and Hit', 'Rhythmic',
+            'Percussion', 'Harmony - Orb', 'Melody - Orb',
+            'Imitone'
         ]
     tracks.reverse()
 
@@ -116,13 +129,12 @@ def makeTracks(project: reapy.Project, composer='Captain'):
         tr: Track = extendTrack(t, idx, project.tracks)
         trackList.append(tr)
 
-    # chain(tracks).flow(
+    # def extend_track(value, idx): extendTrack(value, idx, project.tracks)
+    # def append_track(value): trackList.append(value)
+    # chain(tracks).map(
     #     lambda t:
     #         project.add_track(name=t)
-    # ).flow(
-    #     lambda at, idx:
-    #         extendTrack(at, idx, project.tracks)
-    # ).value()
+    # ).map(extend_track).tap(append_track).value()
 
     # Get the first FX1 for insert
     fx1 = project.tracks['FX1']
@@ -131,11 +143,13 @@ def makeTracks(project: reapy.Project, composer='Captain'):
     # Add the other FX tracks
     fx2 = project.tracks['FX2']
     fx3 = project.tracks['FX3']
+    fx4 = project.tracks['Rise and Hit']
 
     # Select the tracks to move
     fx1.select()
     fx2.select()
     fx3.select()
+    fx4.select()
 
     # Reorder and move to the FX track (as a folder)
     RPR.ReorderSelectedTracks(fx1.index, 1)

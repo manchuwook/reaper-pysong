@@ -6,6 +6,7 @@ from song_structurer import generateStructure
 from parts_item import addMidiItems
 from tracks import makeTracks
 from colors import randColorByHue
+from reapy import reascript_api as RPR
 from __init__ import __version__
 
 __author__ = "manchuwook"
@@ -66,6 +67,11 @@ def main():
     # MIDI items here are added with reference data
     # Remaining regions are pulled from the project param
     addMidiItems(project, refRegion)
+
+    # Add a click track
+    clickTrack = RPR.NamedCommandLookup(
+        '_SWS_AWINSERTCLICKTRK')
+    RPR.Main_OnCommandEx(clickTrack, 0, project)
 
     # Stop blocking the undo history
     project.end_undo_block("Null Angel Template")
