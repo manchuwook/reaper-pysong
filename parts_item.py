@@ -48,29 +48,29 @@ def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
         for idxMidiItem1, midiItem in enumerate(track.items):
             if(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_INTRO):
                 midiGroupId = trackGroupId + 100
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.INTRO):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.INTRO):
                 midiGroupId = trackGroupId + 110
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_VERSE):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_VERSE):
                 midiGroupId = trackGroupId + 120
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.VERSE):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.VERSE):
                 midiGroupId = trackGroupId + 130
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_CHORUS):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_CHORUS):
                 midiGroupId = trackGroupId + 140
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.CHORUS):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.CHORUS):
                 midiGroupId = trackGroupId + 150
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_BREAKDOWN):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_BREAKDOWN):
                 midiGroupId = trackGroupId + 160
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.BREAKDOWN):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.BREAKDOWN):
                 midiGroupId = trackGroupId + 170
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.BRIDGE):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.BRIDGE):
                 midiGroupId = trackGroupId + 180
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.DROP):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.DROP):
                 midiGroupId = trackGroupId + 190
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.INSTRUMENTAL):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.INSTRUMENTAL):
                 midiGroupId = trackGroupId + 200
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_OUTRO):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.PRE_OUTRO):
                 midiGroupId = trackGroupId + 210
-            if(refregions[idxMidiItem1].type == song_library.TypeEnum.OUTRO):
+            elif(refregions[idxMidiItem1].type == song_library.TypeEnum.OUTRO):
                 midiGroupId = trackGroupId + 220
             midiItem.set_info_value('I_GROUPID', midiGroupId)
 

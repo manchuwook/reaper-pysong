@@ -3,6 +3,7 @@ import sys
 import logging
 import random
 import math
+from enum import Enum
 import reapy
 from pydash import chain, for_each
 from reapy.core.track.track import Track
@@ -15,28 +16,48 @@ def rprint(msg):
         print(msg)
 
 
-battery = 'Battery 4 (Native Instruments GmbH) (32 out)'
-chordPotion = 'ChordPotion'
-melodicFlow = 'MelodicFlow'
-reaSynth = 'ReaSynth'
-reaComp = 'ReaComp'
-reaEq = 'ReaEQ'
+class TrackType(Enum):
+    AMBIENT = 'Ambient'
+    ARPEGGIO = 'Arpeggio'
+    BASS = 'Bass'
+    CHORDS = 'Chords'
+    CHORDS_SCRATCH = 'Chords - Scratch'
+    FX1 = 'FX1'
+    FX2 = 'FX2'
+    FX3 = 'FX3'
+    HARMONY = 'Harmony'
+    IMITONE = 'Imitone'
+    LEAD = 'Lead'
+    MELODY = 'Melody'
+    PAD = 'Pad'
+    PERCUSSION = 'Percussion'
+    RISE_AND_HIT = 'Rise and Hit'
+    RHYTHMIC = 'Rhythmic'
+    SUB = 'Sub'
+
+
+BATTERY = 'Battery 4 (Native Instruments GmbH) (32 out)'
+CHORDPOTION = 'ChordPotion'
+MELODICFLOW = 'MelodicFlow'
+REASYNTH = 'ReaSynth'
+REACOMP = 'ReaComp'
+REAEQ = 'ReaEQ'
 
 # Libraries would need to be set in Kontakt after loading
-kontakt = 'Kontakt (Native Instruments) (64 out)'
+KONTAKT = 'Kontakt (Native Instruments) (64 out)'
 
 # region Captain Composer Plug-ins
-captainMelody = 'Captain Melody (Mixed In Key LLC)'
-captainDeep = 'Captain Deep (Mixed In Key LLC)'
-captainBeat = 'Captain Beat (Mixed In Key LLC)'
-captainChords = 'Captain Chords (Mixed In Key LLC)'
+CAPTAINBEAT = 'Captain Beat (Mixed In Key LLC)'
+CAPTAINCHORDS = 'Captain Chords (Mixed In Key LLC)'
+CAPTAINDEEP = 'Captain Deep (Mixed In Key LLC)'
+CAPTAINMELODY = 'Captain Melody (Mixed In Key LLC)'
 # endregion
 
 # region Orb Option
-orbArp = 'Orb Arpeggios'
-orbBass = 'Orb Bass'
-orbChords = 'Orb Chords'
-orbMelody = 'Orb Melody'
+ORBARP = 'Orb Arpeggios'
+ORBBASS = 'Orb Bass'
+ORBCHORDS = 'Orb Chords'
+ORBMELODY = 'Orb Melody'
 # endregion
 
 
@@ -46,28 +67,29 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
     track.set_info_value('D_VOL', tVol * 0.5)
 
     track.color = randColorByHue('red')
+
     # region Orb Composer
     if track.name == 'Chords - Orb':
-        oChords = track.add_fx(name=orbChords)
-    if track.name == 'Arpeggio - Orb':
-        oArp = track.add_fx(name=orbArp)
-    if track.name == 'Bass - Orb':
-        oBass = track.add_fx(name=orbBass)
-    if track.name == 'Harmony - Orb':
-        oHarmony = track.add_fx(name=orbMelody)
-    if track.name == 'Melody - Orb':
-        oMelody = track.add_fx(name=orbMelody)
+        oChords = track.add_fx(name=ORBCHORDS)
+    elif track.name == 'Arpeggio - Orb':
+        oArp = track.add_fx(name=ORBARP)
+    elif track.name == 'Bass - Orb':
+        oBass = track.add_fx(name=ORBBASS)
+    elif track.name == 'Harmony - Orb':
+        oHarmony = track.add_fx(name=ORBMELODY)
+    elif track.name == 'Melody - Orb':
+        oMelody = track.add_fx(name=ORBMELODY)
     # endregion
     # region Captain Composer (Default)
-    if track.name == 'Melody':
-        cptMelody = track.add_fx(name=captainMelody)
-    if track.name == 'Bass':
-        cptDeep = track.add_fx(name=captainDeep)
-    if track.name == 'Arpeggio':
-        cp = track.add_fx(name=chordPotion)
-        rSynth = track.add_fx(name=reaSynth)
-    if track.name == 'Chords - Scratch':
-        cptChords = track.add_fx(name=captainChords)
+    elif track.name == 'Melody':
+        cptMelody = track.add_fx(name=CAPTAINMELODY)
+    elif track.name == 'Bass':
+        cptDeep = track.add_fx(name=CAPTAINDEEP)
+    elif track.name == 'Arpeggio':
+        cp = track.add_fx(name=CHORDPOTION)
+        rSynth = track.add_fx(name=REASYNTH)
+    elif track.name == 'Chords - Scratch':
+        cptChords = track.add_fx(name=CAPTAINCHORDS)
         track.add_send(destination=track.project.tracks['Chords'])
         track.add_send(destination=track.project.tracks['Arpeggio'])
         track.add_send(destination=track.project.tracks['Imitone'])
@@ -76,30 +98,31 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
         track.unselect()
     # endregion
 
-    if track.name == 'Rise and Hit':
-        kntkt = track.add_fx(name=kontakt)
+    elif track.name == 'Rise and Hit':
+        riseAndHit = track.add_fx(name=KONTAKT)
 
-    if track.name == 'Percussion':
-        btry = track.add_fx(name=battery)
+    elif track.name == 'Ambient':
+        thrill = track.add_fx(name=KONTAKT)
+
+    elif track.name == 'Percussion':
+        btry = track.add_fx(name=BATTERY)
 
     # region Do stuff to other tracks
-    # if track.name in ['FX', 'FX1', 'FX2', 'FX3']:
-    # if track.name == 'Harmony':
-    # if track.name == 'Lead':
-    # if track.name == 'Pad':
-    # if track.name == 'Rhythmic':
-    # if track.name == 'Sub':
+    # elif track.name in ['FX', 'FX1', 'FX2', 'FX3']:
+    # elif track.name == 'Harmony':
+    # elif track.name == 'Lead':
+    # elif track.name == 'Pad':
+    # elif track.name == 'Rhythmic':
+    # elif track.name == 'Sub':
     # endregion
 
-    if track.name == 'Imitone':
-        track.add_fx(name=melodicFlow)
-        track.add_fx(name=reaSynth)
+    elif track.name == 'Imitone':
+        track.add_fx(name=MELODICFLOW)
+        track.add_fx(name=REASYNTH)
 
-    # for idx, fx in enumerate(track.fxs):
-    #     xFx: reapy.FX = fx
-    #     fxParams: reapy.FXParamsList = xFx.params
-    track.add_fx(name=reaComp)
-    track.add_fx(name=reaEq)
+    else:
+        track.add_fx(name=REACOMP)
+        track.add_fx(name=REAEQ)
 
     return track
 
@@ -124,17 +147,10 @@ def makeTracks(project: reapy.Project, composer='Captain'):
     tracks.reverse()
 
     trackList: list = list()
-    for idx, track in enumerate(tracks):
-        t = project.add_track(name=track)
-        tr: Track = extendTrack(t, idx, project.tracks)
-        trackList.append(tr)
-
-    # def extend_track(value, idx): extendTrack(value, idx, project.tracks)
-    # def append_track(value): trackList.append(value)
-    # chain(tracks).map(
-    #     lambda t:
-    #         project.add_track(name=t)
-    # ).map(extend_track).tap(append_track).value()
+    def add_track(value): project.add_track(name=t)
+    def extend_track(value, idx): extendTrack(value, idx, project.tracks)
+    def watch_track(value): trackList.append(value)
+    chain(tracks).map(add_track).map(extend_track).tap(watch_track).value()
 
     # Get the first FX1 for insert
     fx1 = project.tracks['FX1']
