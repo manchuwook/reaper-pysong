@@ -147,7 +147,7 @@ def makeTracks(project: reapy.Project, composer='Captain'):
     tracks.reverse()
 
     trackList: list = list()
-    def add_track(value): project.add_track(name=t)
+    def add_track(value): project.add_track(name=value)
     def extend_track(value, idx): extendTrack(value, idx, project.tracks)
     def watch_track(value): trackList.append(value)
     chain(tracks).map(add_track).map(extend_track).tap(watch_track).value()
