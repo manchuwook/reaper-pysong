@@ -3,8 +3,9 @@ import sys
 import logging
 import random
 import math
-from enum import Enum
 import reapy
+from tkinter import *
+from enum import Enum
 from pydash import chain, for_each
 from reapy.core.track.track import Track
 from colors import randColorByHue
@@ -66,7 +67,7 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
     tVol: float = track.get_info_value('D_VOL')
     track.set_info_value('D_VOL', tVol * 0.5)
 
-    track.color = randColorByHue('red')
+    track.color = randColorByHue('green')
 
     # region Orb Composer
     if track.name == 'Chords - Orb':
@@ -80,6 +81,7 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
     elif track.name == 'Melody - Orb':
         oMelody = track.add_fx(name=ORBMELODY)
     # endregion
+
     # region Captain Composer (Default)
     elif track.name == 'Melody':
         cptMelody = track.add_fx(name=CAPTAINMELODY)
@@ -97,12 +99,6 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
         RPR.ReorderSelectedTracks(0, 0)
         track.unselect()
     # endregion
-
-    elif track.name == 'Rise and Hit':
-        riseAndHit = track.add_fx(name=KONTAKT)
-
-    elif track.name == 'Ambient':
-        thrill = track.add_fx(name=KONTAKT)
 
     elif track.name == 'Percussion':
         btry = track.add_fx(name=BATTERY)
@@ -131,26 +127,34 @@ def makeTracks(project: reapy.Project, composer='Captain'):
     if(composer == 'Captain'):
         tracks = [
             'Chords - Scratch', 'Chords', 'Arpeggio',
-            'Bass', 'Ambient', 'Sub', 'Pad',
-            'Lead', 'FX1', 'FX2', 'FX3', 'Rise and Hit', 'Rhythmic',
-            'Percussion', 'Harmony', 'Melody',
-            'Imitone'
+            'Bass', 'Sub', 'Pad', 'Lead',
+            'FX1', 'FX2', 'FX3', 'Rhythmic',
+            'Percussion', 'Harmony', 'Melody', 'Imitone'
         ]
     if(composer == 'Orb'):
         tracks = [
             'Chords - Orb', 'Chords', 'Arpeggio - Orb',
-            'Bass - Orb', 'Ambient', 'Sub', 'Pad',
-            'Lead', 'FX1', 'FX2', 'FX3', 'Rise and Hit', 'Rhythmic',
-            'Percussion', 'Harmony - Orb', 'Melody - Orb',
-            'Imitone'
+            'Bass - Orb', 'Sub', 'Pad', 'Lead',
+            'FX1', 'FX2', 'FX3', 'Rhythmic',
+            'Percussion', 'Harmony - Orb', 'Melody - Orb', 'Imitone'
         ]
     tracks.reverse()
 
     trackList: list = list()
-    def add_track(value): project.add_track(name=value)
-    def extend_track(value, idx): extendTrack(value, idx, project.tracks)
+    def add_track(value): return project.add_track(name=value)
+    def extend_track(value, idx): return extendTrack(
+        value, idx, project.tracks)
+
     def watch_track(value): trackList.append(value)
-    chain(tracks).map(add_track).map(extend_track).tap(watch_track).value()
+    chain(
+        tracks
+    ).map(
+        add_track
+    ).map(
+        extend_track
+    ).tap(
+        watch_track
+    ).value()
 
     # Get the first FX1 for insert
     fx1 = project.tracks['FX1']
@@ -159,15 +163,28 @@ def makeTracks(project: reapy.Project, composer='Captain'):
     # Add the other FX tracks
     fx2 = project.tracks['FX2']
     fx3 = project.tracks['FX3']
-    fx4 = project.tracks['Rise and Hit']
 
     # Select the tracks to move
     fx1.select()
     fx2.select()
     fx3.select()
-    fx4.select()
 
     # Reorder and move to the FX track (as a folder)
     RPR.ReorderSelectedTracks(fx1.index, 1)
+
+    project.unselect_all_tracks()
+
+    # for idx in range(16):
+    #     if(idx == 0):
+    #         kTrack = project.add_track(name='Kontakt 1')
+    #         kFolder = project.add_track(index=kTrack.index, name='Kontakt')
+    #     else:
+    #         kTrack = project.add_track(name='Kontakt ' + str(idx + 1))
+
+    #     watch_track(kTrack)
+    #     kTrack.select()
+
+    # Reorder and move to the Kontakt track (as a folder)
+    # RPR.ReorderSelectedTracks(kFolder.index, 1)
 
     return trackList

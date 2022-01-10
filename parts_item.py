@@ -16,11 +16,6 @@ from replicate_parts import poolGroupItems
 import song_library
 
 
-def rprint(msg):
-    with reapy.reaprint():
-        print(msg)
-
-
 def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
     for idx, region in enumerate(project.regions):
         # Even though regions are added in seconds

@@ -1,5 +1,6 @@
 import logging
 import json
+from tkinter import *
 import reapy
 from song_library import SongLibraryElement, SongPart, song_library_from_dict
 from song_structurer import generateStructure
@@ -18,12 +19,28 @@ _logger = logging.getLogger(__name__)
 project: reapy.Project = reapy.Project()
 
 
+def rprint(msg):
+    with reapy.reaprint():
+        print(msg)
+
+
 @reapy.prevent_ui_refresh()
 def main():
     # reapy.config.enable_dist_api()
-    rprint('Creating template')
+    reapy.print('Creating template')
+
+    names = 'Composer (Orb, Captain)'
+    dvalues = ''
+    maxreturnlen = 100
+    nitems = len(dvalues.split(','))
+    res = RPR.GetUserInputs('dialogname', nitems, names, dvalues, maxreturnlen)
+    if res[0]:
+        # the fourth item holds the input values
+        composerTool = res[4].split(',')[0]
+
     # Disable undo since it has internal functions
     project.begin_undo_block()
+
     # For producing balances and such
     project.master_track.add_fx('Ozone 9')
     mVol = project.master_track.get_info_value('P_VOL')
@@ -63,9 +80,10 @@ def main():
         refRegion.append(p)
         accumulator = accumulator + out_time
 
-    tracks = makeTracks(project)
+    tracks = makeTracks(project, composerTool)
     # MIDI items here are added with reference data
     # Remaining regions are pulled from the project param
+    print(refRegion)
     addMidiItems(project, refRegion)
 
     # Add a click track
@@ -73,13 +91,13 @@ def main():
         '_SWS_AWINSERTCLICKTRK')
     RPR.Main_OnCommandEx(clickTrack, 0, project)
 
+    # Add a track template - command _S&M_ADD_TRTEMPLATEl
+    loadTemplate = RPR.NamedCommandLookup(
+        '_S&M_ADD_TRTEMPLATEl')
+    RPR.Main_OnCommandEx(loadTemplate, 0, project)
+
     # Stop blocking the undo history
     project.end_undo_block("Null Angel Template")
-
-
-def rprint(msg):
-    with reapy.reaprint():
-        print(msg)
 
 
 if __name__ == '__main__':
