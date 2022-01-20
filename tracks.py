@@ -145,7 +145,8 @@ def makeTracks(project: reapy.Project, composer='Captain'):
     def extend_track(value, idx): return extendTrack(
         value, idx, project.tracks)
 
-    def watch_track(value): trackList.append(value)
+    def track_track(value): trackList.append(value)
+
     chain(
         tracks
     ).map(
@@ -153,7 +154,7 @@ def makeTracks(project: reapy.Project, composer='Captain'):
     ).map(
         extend_track
     ).tap(
-        watch_track
+        track_track
     ).value()
 
     # Get the first FX1 for insert

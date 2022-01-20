@@ -1,19 +1,20 @@
-import argparse
-import enum
-import sys
-import logging
+import json
+import reapy
 import random
-import math
+from reapy import reascript_api as RPR
+# from graph_from_edges import generate_measures
 from song_library import SongPart
 from typing import Dict, List
-import reapy
 from pydash import _, uniq
 from reapy.core.track.track import Track
-from colors import randColorByHue
-from reapy import reascript_api as RPR
 from replicate_parts import poolGroupItems
 
 import song_library
+
+
+def rprint(msg):
+    with reapy.reaprint():
+        print(msg)
 
 
 def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
@@ -28,9 +29,48 @@ def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
 
             # Takes don't seem to be getting renamed
             # Possible the P_NAME isn't correct
-            tk: reapy.Take = RPR.GetActiveTake(mi)
-            newTk: reapy.Take = RPR.GetSetMediaItemTakeInfo_String(
-                tk, 'P_NAME', track.name + ' - ' + refregions[idx].name, 1)
+            tk: reapy.Take = mi.active_take
+
+            if(track.name == 'Lead'):
+                part_notes = []
+                p = refregions[idx].name
+
+                if 'Pre-Chorus' in p:
+                    sp = 'prechorus_'
+                elif 'Chorus' in p:
+                    sp = 'chorus_'
+                elif 'Pre-Verse' in p:
+                    sp = 'preverse_'
+                elif 'Verse' in p:
+                    sp = 'verse_'
+                else:
+                    sp = 'measure_'
+
+                fileName = "s:\\dev\\" + sp + str(int(end - start)) + ".json"
+                with open(fileName) as infile:
+                    part_notes = json.load(infile)
+
+                current = 0.0
+                for measure in part_notes:
+                    for noteOrRest in measure:
+                        if(noteOrRest < 0):
+                            tk.add_note(current, current + noteOrRest, 64, 0, 0,
+                                        False, True, "beats", True)
+                            # The note is a rest, leave a positive space open
+                            current = current + (noteOrRest * -1)
+                        elif (noteOrRest > 0):
+                            # This is a note
+
+                            # Choose pitches in the C Maj. scale
+                            pitch = random.choice([60, 62, 64, 65,
+                                                   67, 69, 71, 72])
+                            tk.add_note(current, current + noteOrRest, pitch, 100, 0,
+                                        False, False, "beats", True)
+                            current = current + noteOrRest
+                # 40038 - File: Export contents as .MID
+
+            # newTk: reapy.Take = RPR.GetSetMediaItemTakeInfo_String(
+            #     tk, 'P_NAME', track.name + ' - ' + refregions[idx].name, 1)
             mi.update()
 
     for idx, track in enumerate(project.tracks):

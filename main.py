@@ -1,6 +1,9 @@
+import subprocess
 import logging
 import json
 from tkinter import *
+from tkinter.ttk import Scale
+from tkinterweb import HtmlFrame
 import reapy
 from song_library import SongLibraryElement, SongPart, song_library_from_dict
 from song_structurer import generateStructure
@@ -8,6 +11,7 @@ from parts_item import addMidiItems
 from tracks import makeTracks
 from colors import randColorByHue
 from reapy import reascript_api as RPR
+import sys
 from __init__ import __version__
 
 __author__ = "manchuwook"
@@ -18,10 +22,23 @@ _logger = logging.getLogger(__name__)
 
 project: reapy.Project = reapy.Project()
 
+sys.argv = ['Main']
+root = Tk()
+
 
 def rprint(msg):
     with reapy.reaprint():
         print(msg)
+
+
+def write_to_console(url, data, method):
+    response = data.decode('utf-8')
+    items = {}
+    for kvpair in response.split('&'):
+        kv = kvpair.split('=')
+        key, value = kv[0], kv[1]
+        items[key] = value
+    return items
 
 
 @reapy.prevent_ui_refresh()
@@ -29,14 +46,72 @@ def main():
     # reapy.config.enable_dist_api()
     reapy.print('Creating template')
 
-    names = 'Composer (Orb, Captain)'
-    dvalues = ''
-    maxreturnlen = 100
-    nitems = len(dvalues.split(','))
-    res = RPR.GetUserInputs('dialogname', nitems, names, dvalues, maxreturnlen)
-    if res[0]:
-        # the fourth item holds the input values
-        composerTool = res[4].split(',')[0]
+    frame = HtmlFrame(root)
+    frame.load_file('file:///static/index.html')
+    # whole_note_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # half_note_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # quarter_note_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # eighth_note_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # sixteenth_note_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # whole_rest_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # half_rest_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # quarter_rest_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # eighth_rest_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+    # sixteenth_rest_weight = Scale(
+    #     master=root, orient='horizontal', from_=-1, to=1, tickinterval=0.0125)
+
+    # frame.replace_element('#wholeNotesWeight', whole_note_weight)
+    # frame.replace_element('#halfNotesWeight', half_note_weight)
+    # frame.replace_element('#quarterNotesWeight', quarter_note_weight)
+    # frame.replace_element('#eighthNotesWeight', eighth_note_weight)
+    # frame.replace_element('#sixteenthNotesWeight', sixteenth_note_weight)
+    # frame.replace_element('#wholeRestsWeight', whole_rest_weight)
+    # frame.replace_element('#halfRestsWeight', half_rest_weight)
+    # frame.replace_element('#quarterRestsWeight', quarter_rest_weight)
+    # frame.replace_element('#eighthRestsWeight', eighth_rest_weight)
+    # frame.replace_element('#sixteenthRestsWeight', sixteenth_rest_weight)
+
+    # whole_note_weight.pack()
+    # half_note_weight.pack()
+    # quarter_note_weight.pack()
+    # eighth_note_weight.pack()
+    # sixteenth_note_weight.pack()
+    # whole_rest_weight.pack()
+    # half_rest_weight.pack()
+    # quarter_rest_weight.pack()
+    # eighth_rest_weight.pack()
+    # sixteenth_rest_weight.pack()
+
+    frame.on_form_submit(write_to_console)
+
+    # weights = {}
+    # weights['whole_note_weight'] = whole_note_weight.get()
+    # weights['half_note_weight'] = half_note_weight.get()
+    # weights['quarter_note_weight'] = quarter_note_weight.get()
+    # weights['eighth_note_weight'] = eighth_note_weight.get()
+    # weights['sixteenth_note_weight'] = sixteenth_note_weight.get()
+    # weights['whole_rest_weight'] = whole_rest_weight.get()
+    # weights['half_rest_weight'] = half_rest_weight.get()
+    # weights['quarter_rest_weight'] = quarter_rest_weight.get()
+    # weights['eighth_rest_weight'] = eighth_rest_weight.get()
+    # weights['sixteenth_rest_weight'] = sixteenth_rest_weight.get()
+
+    frame.pack(fill="both", expand=True)
+    root.mainloop()
+
+    p = subprocess.Popen('py generate_measures.py')
+
+    # the fourth item holds the input values
+    composerTool = 'Captain'
 
     # Disable undo since it has internal functions
     project.begin_undo_block()
