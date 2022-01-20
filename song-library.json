@@ -165,7 +165,7 @@
             {
                 "name": "Solo",
                 "bars": 16,
-                "color": "gray",
+                "color": "monochrome",
                 "type": "Instrumental"
             },
             {
@@ -189,7 +189,7 @@
             {
                 "name": "Pre-Outro",
                 "bars": 4,
-                "color": "lightred",
+                "color": "red",
                 "type": "Pre-Outro"
             },
             {
@@ -197,6 +197,60 @@
                 "bars": 8,
                 "color": "red",
                 "type": "Outro"
+            }
+        ]
+    },
+    {
+        "name": "V-C-V-C-B-C-C-O",
+        "structure": [
+            {
+                "type": "Verse",
+                "bars": 8,
+                "color": "red",
+                "name": "Verse 1"
+            },
+            {
+                "type": "Chorus",
+                "bars": 4,
+                "color": "green",
+                "name": "Chorus 2"
+            },
+            {
+                "type": "Verse",
+                "bars": 8,
+                "color": "red",
+                "name": "Verse 2"
+            },
+            {
+                "type": "Chorus",
+                "bars": 4,
+                "color": "green",
+                "name": "Chorus 2"
+            },
+            {
+                "type": "Breakdown",
+                "bars": 4,
+                "color": "red",
+                "name": "Breakdown"
+            },
+            {
+                "type": "Chorus",
+                "bars": 4,
+                "color": "green",
+                "name": "Chorus 3",
+                "variation": true
+            },
+            {
+                "type": "Chorus",
+                "bars": 4,
+                "color": "green",
+                "name": "Chorus 4"
+            },
+            {
+                "type": "Outro",
+                "bars": 4,
+                "color": "orange",
+                "name": "Outro"
             }
         ]
     }
