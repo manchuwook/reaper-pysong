@@ -13,5 +13,264 @@
       }
     }
   },
-  "description": "Collection of pre-made song structures"
+  "description": "Collection of pre-made song structures",
+  "examples": [
+    [
+      {
+        "name": "A-B-A-B-C-C",
+        "structure": [
+          {
+            "name": "Verse 1",
+            "bars": 8,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Chorus 1",
+            "bars": 16,
+            "color": "red",
+            "type": "Chorus"
+          },
+          {
+            "name": "Verse 2",
+            "bars": 8,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Chorus 2",
+            "bars": 16,
+            "color": "red",
+            "type": "Chorus"
+          },
+          {
+            "name": "Verse 3",
+            "bars": 16,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Verse 4",
+            "bars": 16,
+            "color": "blue",
+            "type": "Verse"
+          }
+        ]
+      },
+      {
+        "name": "A-B-A-B-C-C 2",
+        "structure": [
+          {
+            "name": "Verse 1",
+            "bars": 8,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Chorus 1",
+            "bars": 16,
+            "color": "red",
+            "type": "Chorus"
+          },
+          {
+            "name": "Verse 2",
+            "bars": 8,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Chorus 2",
+            "bars": 16,
+            "color": "red",
+            "type": "Chorus"
+          },
+          {
+            "name": "Verse 3",
+            "bars": 16,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Verse 4",
+            "bars": 16,
+            "color": "blue",
+            "type": "Verse"
+          }
+        ]
+      },
+      {
+        "name": "Complex 1",
+        "structure": [
+          {
+            "name": "Pre-Intro",
+            "bars": 4,
+            "color": "green",
+            "type": "Pre-Intro"
+          },
+          {
+            "name": "Intro",
+            "bars": 8,
+            "color": "yellow",
+            "type": "Intro"
+          },
+          {
+            "name": "Pre-Verse 1",
+            "bars": 4,
+            "color": "blue",
+            "type": "Pre-Verse"
+          },
+          {
+            "name": "Verse 1",
+            "bars": 16,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Pre-Chorus 1",
+            "bars": 4,
+            "color": "orange",
+            "type": "Pre-Chorus"
+          },
+          {
+            "name": "Chorus 1",
+            "bars": 16,
+            "color": "orange",
+            "type": "Chorus"
+          },
+          {
+            "name": "Pre-Verse 2",
+            "bars": 4,
+            "color": "blue",
+            "type": "Pre-Verse"
+          },
+          {
+            "name": "Verse 2",
+            "bars": 16,
+            "color": "blue",
+            "type": "Verse"
+          },
+          {
+            "name": "Pre-Chorus 2",
+            "bars": 4,
+            "color": "orange",
+            "type": "Pre-Chorus"
+          },
+          {
+            "name": "Chorus 2",
+            "bars": 16,
+            "color": "orange",
+            "type": "Chorus"
+          },
+          {
+            "name": "Chorus Var",
+            "bars": 16,
+            "color": "orange",
+            "type": "Chorus"
+          },
+          {
+            "name": "Drop",
+            "bars": 4,
+            "color": "purple",
+            "type": "Drop"
+          },
+          {
+            "name": "Breakdown",
+            "bars": 16,
+            "color": "gray",
+            "type": "Breakdown"
+          },
+          {
+            "name": "Solo",
+            "bars": 16,
+            "color": "gray",
+            "type": "Instrumental"
+          },
+          {
+            "name": "Pre-Chorus 3",
+            "bars": 4,
+            "color": "orange",
+            "type": "Pre-Chorus"
+          },
+          {
+            "name": "Chorus Var",
+            "bars": 16,
+            "color": "orange",
+            "type": "Chorus"
+          },
+          {
+            "name": "Chorus 3",
+            "bars": 16,
+            "color": "orange",
+            "type": "Chorus"
+          },
+          {
+            "name": "Pre-Outro",
+            "bars": 4,
+            "color": "lightred",
+            "type": "Pre-Outro"
+          },
+          {
+            "name": "Outro",
+            "bars": 8,
+            "color": "red",
+            "type": "Outro"
+          }
+        ]
+      },
+      {
+        "name": "V-C-V-C-B-C-C-O",
+        "structure": [
+          {
+            "type": "Verse",
+            "bars": 8,
+            "color": "red",
+            "name": "Verse 1"
+          },
+          {
+            "type": "Chorus",
+            "bars": 4,
+            "color": "green",
+            "name": "Chorus 2"
+          },
+          {
+            "type": "Verse",
+            "bars": 8,
+            "color": "red",
+            "name": "Verse 2"
+          },
+          {
+            "type": "Chorus",
+            "bars": 4,
+            "color": "green",
+            "name": "Chorus 2"
+          },
+          {
+            "type": "Breakdown",
+            "bars": 4,
+            "color": "red",
+            "name": "Breakdown"
+          },
+          {
+            "type": "Chorus",
+            "bars": 4,
+            "color": "darkgreen",
+            "name": "Chorus 3",
+            "variation": true
+          },
+          {
+            "type": "Chorus",
+            "bars": 4,
+            "color": "green",
+            "name": "Chorus 4"
+          },
+          {
+            "type": "Outro",
+            "bars": 4,
+            "color": "orange",
+            "name": "Outro"
+          }
+        ]
+      }
+    ]
+  ]
 }

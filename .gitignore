@@ -128,4 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-music_json_convert/node_modules
+# Generator node modules
+music_json_convert/node_modules/

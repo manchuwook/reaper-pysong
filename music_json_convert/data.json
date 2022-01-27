@@ -1,0 +1,5705 @@
+[
+   {
+      "label": "M1_4/4_V1_B0.0_NILS",
+      "from": "M1_4/4_V1_B0.0_NILS",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.0_1N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/2.N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/2N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/4.N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/4N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8.N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/4TN",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8T+1/8TN",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8TN",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/16N",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/2.R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/2R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/4.R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/4R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8.R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/4TR",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8T+1/8TR",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/8TR",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.0_1/16R",
+            "Next_Percentage": "4.545",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1N",
+      "from": "M1_4/4_V1_B1.0_1N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1R",
+      "from": "M1_4/4_V1_B1.0_1R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/2.N",
+      "from": "M1_4/4_V1_B1.0_1/2.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/2.R",
+      "from": "M1_4/4_V1_B1.0_1/2.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/2N",
+      "from": "M1_4/4_V1_B1.0_1/2N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/2R",
+      "from": "M1_4/4_V1_B1.0_1/2R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/4.N",
+      "from": "M1_4/4_V1_B1.0_1/4.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/4.R",
+      "from": "M1_4/4_V1_B1.0_1/4.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16R",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/4N",
+      "from": "M1_4/4_V1_B1.0_1/4N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/4R",
+      "from": "M1_4/4_V1_B1.0_1/4R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8.N",
+      "from": "M1_4/4_V1_B1.0_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8.R",
+      "from": "M1_4/4_V1_B1.0_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/4TN",
+      "from": "M1_4/4_V1_B1.0_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.666_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.666_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/4TR",
+      "from": "M1_4/4_V1_B1.0_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.666_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.666_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8T+1/8TN",
+      "from": "M1_4/4_V1_B1.0_1/8T+1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8T+1/8TR",
+      "from": "M1_4/4_V1_B1.0_1/8T+1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.666_1/8TN",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8N",
+      "from": "M1_4/4_V1_B1.0_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.5_1/4.N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/4N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/8N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/16N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/4.R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/4R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/8R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/16R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8R",
+      "from": "M1_4/4_V1_B1.0_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.5_1/4.N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/4N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8TN",
+      "from": "M1_4/4_V1_B1.0_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.333_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.333_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/8TR",
+      "from": "M1_4/4_V1_B1.0_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.333_1/8TN",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/16N",
+      "from": "M1_4/4_V1_B1.0_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.25_1/8.N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.25_1/8N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.25_1/16N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.25_1/8.R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.25_1/8R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.25_1/16R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.0_1/16R",
+      "from": "M1_4/4_V1_B1.0_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.25_1/8.N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.25_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.25_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.25_1/8.N",
+      "from": "M1_4/4_V1_B1.25_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.25_1/8.R",
+      "from": "M1_4/4_V1_B1.25_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.N",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "10",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.25_1/8N",
+      "from": "M1_4/4_V1_B1.25_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.25_1/8R",
+      "from": "M1_4/4_V1_B1.25_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.25_1/16N",
+      "from": "M1_4/4_V1_B1.25_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.25_1/16R",
+      "from": "M1_4/4_V1_B1.25_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.5_1/8N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.5_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.333_1/8TN",
+      "from": "M1_4/4_V1_B1.333_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.333_1/8TR",
+      "from": "M1_4/4_V1_B1.333_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.666_1/8TN",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/4.N",
+      "from": "M1_4/4_V1_B1.5_1/4.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/4.R",
+      "from": "M1_4/4_V1_B1.5_1/4.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/4N",
+      "from": "M1_4/4_V1_B1.5_1/4N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/4N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/4R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/4R",
+      "from": "M1_4/4_V1_B1.5_1/4R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/4N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/8N",
+      "from": "M1_4/4_V1_B1.5_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/8R",
+      "from": "M1_4/4_V1_B1.5_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/16N",
+      "from": "M1_4/4_V1_B1.5_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B1.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.5_1/16R",
+      "from": "M1_4/4_V1_B1.5_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B1.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.666_1/4TN",
+      "from": "M1_4/4_V1_B1.666_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.333_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.333_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.666_1/4TR",
+      "from": "M1_4/4_V1_B1.666_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.333_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.333_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.666_1/8TN",
+      "from": "M1_4/4_V1_B1.666_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.666_1/8TR",
+      "from": "M1_4/4_V1_B1.666_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.75_1/16N",
+      "from": "M1_4/4_V1_B1.75_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B1.75_1/16R",
+      "from": "M1_4/4_V1_B1.75_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/2.R",
+      "from": "M1_4/4_V1_B2.0_1/2.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/2N",
+      "from": "M1_4/4_V1_B2.0_1/2N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/2R",
+      "from": "M1_4/4_V1_B2.0_1/2R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/4.N",
+      "from": "M1_4/4_V1_B2.0_1/4.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/4.R",
+      "from": "M1_4/4_V1_B2.0_1/4.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16R",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/4N",
+      "from": "M1_4/4_V1_B2.0_1/4N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/4R",
+      "from": "M1_4/4_V1_B2.0_1/4R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "6.25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8.N",
+      "from": "M1_4/4_V1_B2.0_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8.R",
+      "from": "M1_4/4_V1_B2.0_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/4TN",
+      "from": "M1_4/4_V1_B2.0_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.666_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.666_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/4TR",
+      "from": "M1_4/4_V1_B2.0_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.666_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.666_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+      "from": "M1_4/4_V1_B2.0_1/8T+1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+      "from": "M1_4/4_V1_B2.0_1/8T+1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.666_1/8TN",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8N",
+      "from": "M1_4/4_V1_B2.0_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/4.N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/4N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/4.R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/4R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8R",
+      "from": "M1_4/4_V1_B2.0_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/4.N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/4N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8TN",
+      "from": "M1_4/4_V1_B2.0_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.333_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.333_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/8TR",
+      "from": "M1_4/4_V1_B2.0_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.333_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.333_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/16N",
+      "from": "M1_4/4_V1_B2.0_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.25_1/8.N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.25_1/8N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.25_1/16N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.25_1/8.R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.25_1/8R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.25_1/16R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.0_1/16R",
+      "from": "M1_4/4_V1_B2.0_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.25_1/8.N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.25_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.25_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.25_1/8.N",
+      "from": "M1_4/4_V1_B2.25_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.25_1/8.R",
+      "from": "M1_4/4_V1_B2.25_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.25_1/8N",
+      "from": "M1_4/4_V1_B2.25_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.25_1/8R",
+      "from": "M1_4/4_V1_B2.25_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.25_1/16N",
+      "from": "M1_4/4_V1_B2.25_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.25_1/16R",
+      "from": "M1_4/4_V1_B2.25_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.5_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.5_1/8R",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.333_1/8TN",
+      "from": "M1_4/4_V1_B2.333_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.333_1/8TR",
+      "from": "M1_4/4_V1_B2.333_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.333_1/4TN",
+      "from": "M1_4/4_V1_B2.333_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.333_1/4TR",
+      "from": "M1_4/4_V1_B2.333_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/4.N",
+      "from": "M1_4/4_V1_B2.5_1/4.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/4.R",
+      "from": "M1_4/4_V1_B2.5_1/4.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/4N",
+      "from": "M1_4/4_V1_B2.5_1/4N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/4R",
+      "from": "M1_4/4_V1_B2.5_1/4R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16R",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/8N",
+      "from": "M1_4/4_V1_B2.5_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/8R",
+      "from": "M1_4/4_V1_B2.5_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/16N",
+      "from": "M1_4/4_V1_B2.5_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B2.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.5_1/16R",
+      "from": "M1_4/4_V1_B2.5_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B2.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.666_1/4TN",
+      "from": "M1_4/4_V1_B2.666_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.333_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.333_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.666_1/4TR",
+      "from": "M1_4/4_V1_B2.666_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.333_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.333_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.666_1/8TN",
+      "from": "M1_4/4_V1_B2.666_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.666_1/8TR",
+      "from": "M1_4/4_V1_B2.666_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.75_1/16N",
+      "from": "M1_4/4_V1_B2.75_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B2.75_1/16R",
+      "from": "M1_4/4_V1_B2.75_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.0_1/2N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TN",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16N",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/2R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8.R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/4TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/8TR",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.0_1/16R",
+            "Next_Percentage": "5.555",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/2R",
+      "from": "M1_4/4_V1_B3.0_1/2R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/4.N",
+      "from": "M1_4/4_V1_B3.0_1/4.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/4.R",
+      "from": "M1_4/4_V1_B3.0_1/4.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16R",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/4N",
+      "from": "M1_4/4_V1_B3.0_1/4N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/4R",
+      "from": "M1_4/4_V1_B3.0_1/4R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "9.09",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8.N",
+      "from": "M1_4/4_V1_B3.0_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8.R",
+      "from": "M1_4/4_V1_B3.0_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/4TN",
+      "from": "M1_4/4_V1_B3.0_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.666_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.666_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/4TR",
+      "from": "M1_4/4_V1_B3.0_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.666_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.666_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+      "from": "M1_4/4_V1_B3.0_1/8T+1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+      "from": "M1_4/4_V1_B3.0_1/8T+1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.666_1/8TN",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8N",
+      "from": "M1_4/4_V1_B3.0_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/4.N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/4N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/4.R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/4R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/8R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16R",
+            "Next_Percentage": "12.5",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8R",
+      "from": "M1_4/4_V1_B3.0_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/4.N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/4N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8TN",
+      "from": "M1_4/4_V1_B3.0_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.333_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.333_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/8TR",
+      "from": "M1_4/4_V1_B3.0_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.333_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.333_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/16N",
+      "from": "M1_4/4_V1_B3.0_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.25_1/8.N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.25_1/8N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.25_1/16N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.25_1/8.R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.25_1/8R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.25_1/16R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.0_1/16R",
+      "from": "M1_4/4_V1_B3.0_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.25_1/8.N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.25_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.25_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.25_1/8.N",
+      "from": "M1_4/4_V1_B3.25_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.25_1/8.R",
+      "from": "M1_4/4_V1_B3.25_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.25_1/8N",
+      "from": "M1_4/4_V1_B3.25_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.25_1/8R",
+      "from": "M1_4/4_V1_B3.25_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.25_1/16N",
+      "from": "M1_4/4_V1_B3.25_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.25_1/16R",
+      "from": "M1_4/4_V1_B3.25_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.5_1/8N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.5_1/8R",
+            "Next_Percentage": "0",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.333_1/4TN",
+      "from": "M1_4/4_V1_B3.333_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.333_1/4TR",
+      "from": "M1_4/4_V1_B3.333_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.333_1/8TN",
+      "from": "M1_4/4_V1_B3.333_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.333_1/8TR",
+      "from": "M1_4/4_V1_B3.333_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/4.N",
+      "from": "M1_4/4_V1_B3.5_1/4.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/4.R",
+      "from": "M1_4/4_V1_B3.5_1/4.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/4N",
+      "from": "M1_4/4_V1_B3.5_1/4N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/4R",
+      "from": "M1_4/4_V1_B3.5_1/4R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/8N",
+      "from": "M1_4/4_V1_B3.5_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/8R",
+      "from": "M1_4/4_V1_B3.5_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/16N",
+      "from": "M1_4/4_V1_B3.5_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B3.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.5_1/16R",
+      "from": "M1_4/4_V1_B3.5_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B3.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.666_1/4TN",
+      "from": "M1_4/4_V1_B3.666_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.333_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.333_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.666_1/4TR",
+      "from": "M1_4/4_V1_B3.666_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.333_1/4TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.333_1/4TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.666_1/8TN",
+      "from": "M1_4/4_V1_B3.666_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.666_1/8TR",
+      "from": "M1_4/4_V1_B3.666_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.75_1/16N",
+      "from": "M1_4/4_V1_B3.75_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B3.75_1/16R",
+      "from": "M1_4/4_V1_B3.75_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.0_1/4N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TN",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16N",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/4R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8.R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/8TR",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.0_1/16R",
+            "Next_Percentage": "8.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/4R",
+      "from": "M1_4/4_V1_B4.0_1/4R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8.N",
+      "from": "M1_4/4_V1_B4.0_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8.R",
+      "from": "M1_4/4_V1_B4.0_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+      "from": "M1_4/4_V1_B4.0_1/8T+1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+      "from": "M1_4/4_V1_B4.0_1/8T+1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.666_1/8TN",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8N",
+      "from": "M1_4/4_V1_B4.0_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8R",
+      "from": "M1_4/4_V1_B4.0_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8TN",
+      "from": "M1_4/4_V1_B4.0_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.333_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.333_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/8TR",
+      "from": "M1_4/4_V1_B4.0_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.333_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.333_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/16N",
+      "from": "M1_4/4_V1_B4.0_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.25_1/8.N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.25_1/8N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.25_1/16N",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.25_1/8.R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.25_1/8R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.25_1/16R",
+            "Next_Percentage": "16.666",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.0_1/16R",
+      "from": "M1_4/4_V1_B4.0_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.25_1/8.N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.25_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.25_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.25_1/8.N",
+      "from": "M1_4/4_V1_B4.25_1/8.N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.25_1/8.R",
+      "from": "M1_4/4_V1_B4.25_1/8.R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.25_1/8N",
+      "from": "M1_4/4_V1_B4.25_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.25_1/8R",
+      "from": "M1_4/4_V1_B4.25_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.25_1/16N",
+      "from": "M1_4/4_V1_B4.25_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/8R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16R",
+            "Next_Percentage": "25",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.25_1/16R",
+      "from": "M1_4/4_V1_B4.25_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.5_1/8N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16N",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.5_1/16R",
+            "Next_Percentage": "33.333",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.333_1/4TN",
+      "from": "M1_4/4_V1_B4.333_1/4TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.333_1/4TR",
+      "from": "M1_4/4_V1_B4.333_1/4TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.333_1/8TN",
+      "from": "M1_4/4_V1_B4.333_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.666_1/8TN",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.666_1/8TR",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.333_1/8TR",
+      "from": "M1_4/4_V1_B4.333_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.666_1/8TN",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.5_1/8N",
+      "from": "M1_4/4_V1_B4.5_1/8N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.5_1/8R",
+      "from": "M1_4/4_V1_B4.5_1/8R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.5_1/16N",
+      "from": "M1_4/4_V1_B4.5_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.75_1/16N",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         },
+         {
+            "label": "M1_4/4_V1_B4.75_1/16R",
+            "Next_Percentage": "50",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.5_1/16R",
+      "from": "M1_4/4_V1_B4.5_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B4.75_1/16N",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.666_1/8TN",
+      "from": "M1_4/4_V1_B4.666_1/8TN",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.666_1/8TR",
+      "from": "M1_4/4_V1_B4.666_1/8TR",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.75_1/16N",
+      "from": "M1_4/4_V1_B4.75_1/16N",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   },
+   {
+      "label": "M1_4/4_V1_B4.75_1/16R",
+      "from": "M1_4/4_V1_B4.75_1/16R",
+      "to": [
+         {
+            "label": "M1_4/4_V1_B0.0_NILS",
+            "Next_Percentage": "100",
+            "tie": "N/A"
+         }
+      ]
+   }
+]
