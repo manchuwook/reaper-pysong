@@ -2,7 +2,6 @@ import json
 import reapy
 import random
 from reapy import reascript_api as RPR
-# from graph_from_edges import generate_measures
 from song_library import SongPart
 from typing import Dict, List
 from pydash import _, uniq
@@ -50,6 +49,8 @@ def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
                 with open(fileName) as infile:
                     part_notes = json.load(infile)
 
+                # 40685
+
                 current = 0.0
                 for measure in part_notes:
                     for noteOrRest in measure:
@@ -63,7 +64,7 @@ def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
 
                             # Choose pitches in the C Maj. scale
                             pitch = random.choice([60, 62, 64, 65,
-                                                   67, 69, 71, 72])
+                                                  67, 69, 71, 72], 1, [4, 3, 2, 1, 2, 3, 2, 1])
                             tk.add_note(current, current + noteOrRest, pitch, 100, 0,
                                         False, False, "beats", True)
                             current = current + noteOrRest

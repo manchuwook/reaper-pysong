@@ -6,7 +6,7 @@
 #
 #     result = cytoscape_graph_from_dict(json.loads(json_string))
 
-from typing import Any, Union, List, TypeVar, Type, cast, Callable
+from typing import Any, List, TypeVar, Type, cast, Callable
 from enum import Enum
 
 
@@ -34,11 +34,6 @@ def to_float(x: Any) -> float:
     return x
 
 
-def from_int(x: Any) -> int:
-    assert isinstance(x, int) and not isinstance(x, bool)
-    return x
-
-
 def to_class(c: Type[T], x: Any) -> dict:
     assert isinstance(x, c)
     return cast(Any, x).to_dict()
@@ -47,15 +42,6 @@ def to_class(c: Type[T], x: Any) -> dict:
 def to_enum(c: Type[EnumT], x: Any) -> EnumT:
     assert isinstance(x, c)
     return x.value
-
-
-def from_union(fs, x):
-    for f in fs:
-        try:
-            return f(x)
-        except:
-            pass
-    assert False
 
 
 def from_list(f: Callable[[Any], T], x: Any) -> List[T]:
@@ -81,6 +67,10 @@ class RendererClass:
         return result
 
 
+class Classes(Enum):
+    EDGE = "edge"
+
+
 class EdgeData:
     id: int
     source_label: str
@@ -88,15 +78,17 @@ class EdgeData:
     target_label: str
     target: str
     weight: float
+    stop: bool
     tie: bool
 
-    def __init__(self, id: int, source_label: str, source: str, target_label: str, target: str, weight: float, tie: bool) -> None:
+    def __init__(self, id: int, source_label: str, source: str, target_label: str, target: str, weight: float, stop: bool, tie: bool) -> None:
         self.id = id
         self.source_label = source_label
         self.source = source
         self.target_label = target_label
         self.target = target
         self.weight = weight
+        self.stop = stop
         self.tie = tie
 
     @staticmethod
@@ -108,8 +100,9 @@ class EdgeData:
         target_label = from_str(obj.get("targetLabel"))
         target = from_str(obj.get("target"))
         weight = from_float(obj.get("weight"))
+        stop = from_bool(obj.get("stop"))
         tie = from_bool(obj.get("tie"))
-        return EdgeData(id, source_label, source, target_label, target, weight, tie)
+        return EdgeData(id, source_label, source, target_label, target, weight, stop, tie)
 
     def to_dict(self) -> dict:
         result: dict = {}
@@ -119,6 +112,7 @@ class EdgeData:
         result["targetLabel"] = from_str(self.target_label)
         result["target"] = from_str(self.target)
         result["weight"] = to_float(self.weight)
+        result["stop"] = from_bool(self.stop)
         result["tie"] = from_bool(self.tie)
         return result
 
@@ -128,24 +122,24 @@ class EdgeGroup(Enum):
 
 
 class Pan:
-    x: int
-    y: int
+    x: float
+    y: float
 
-    def __init__(self, x: int, y: int) -> None:
+    def __init__(self, x: float, y: float) -> None:
         self.x = x
         self.y = y
 
     @staticmethod
     def from_dict(obj: Any) -> 'Pan':
         assert isinstance(obj, dict)
-        x = from_int(obj.get("x"))
-        y = from_int(obj.get("y"))
+        x = from_float(obj.get("x"))
+        y = from_float(obj.get("y"))
         return Pan(x, y)
 
     def to_dict(self) -> dict:
         result: dict = {}
-        result["x"] = from_int(self.x)
-        result["y"] = from_int(self.y)
+        result["x"] = to_float(self.x)
+        result["y"] = to_float(self.y)
         return result
 
 
@@ -159,9 +153,9 @@ class Edge:
     locked: bool
     grabbable: bool
     pannable: bool
-    classes: str
+    classes: Classes
 
-    def __init__(self, data: EdgeData, position: Pan, group: EdgeGroup, removed: bool, selected: bool, selectable: bool, locked: bool, grabbable: bool, pannable: bool, classes: str) -> None:
+    def __init__(self, data: EdgeData, position: Pan, group: EdgeGroup, removed: bool, selected: bool, selectable: bool, locked: bool, grabbable: bool, pannable: bool, classes: Classes) -> None:
         self.data = data
         self.position = position
         self.group = group
@@ -185,7 +179,7 @@ class Edge:
         locked = from_bool(obj.get("locked"))
         grabbable = from_bool(obj.get("grabbable"))
         pannable = from_bool(obj.get("pannable"))
-        classes = from_str(obj.get("classes"))
+        classes = Classes(obj.get("classes"))
         return Edge(data, position, group, removed, selected, selectable, locked, grabbable, pannable, classes)
 
     def to_dict(self) -> dict:
@@ -199,37 +193,37 @@ class Edge:
         result["locked"] = from_bool(self.locked)
         result["grabbable"] = from_bool(self.grabbable)
         result["pannable"] = from_bool(self.pannable)
-        result["classes"] = from_str(self.classes)
+        result["classes"] = to_enum(Classes, self.classes)
         return result
 
 
 class NodeData:
-    id: str
     label: str
-    beat: Union[int, str]
-    duration: Union[int, str]
+    beat: float
+    duration: str
+    id: str
 
-    def __init__(self, id: str, label: str, beat: Union[int, str], duration: Union[int, str]) -> None:
-        self.id = id
+    def __init__(self, label: str, beat: float, duration: str, id: str) -> None:
         self.label = label
         self.beat = beat
         self.duration = duration
+        self.id = id
 
     @staticmethod
     def from_dict(obj: Any) -> 'NodeData':
         assert isinstance(obj, dict)
-        id = from_str(obj.get("id"))
         label = from_str(obj.get("label"))
-        beat = from_union([from_int, from_str], obj.get("beat"))
-        duration = from_union([from_int, from_str], obj.get("duration"))
-        return NodeData(id, label, beat, duration)
+        beat = from_float(obj.get("beat"))
+        duration = from_str(obj.get("duration"))
+        id = from_str(obj.get("id"))
+        return NodeData(label, beat, duration, id)
 
     def to_dict(self) -> dict:
         result: dict = {}
-        result["id"] = from_str(self.id)
         result["label"] = from_str(self.label)
-        result["beat"] = from_union([from_int, from_str], self.beat)
-        result["duration"] = from_union([from_int, from_str], self.duration)
+        result["beat"] = to_float(self.beat)
+        result["duration"] = from_str(self.duration)
+        result["id"] = from_str(self.id)
         return result
 
 
@@ -318,7 +312,7 @@ class CytoscapeGraph:
     data: RendererClass
     zooming_enabled: bool
     user_zooming_enabled: bool
-    zoom: int
+    zoom: float
     min_zoom: float
     max_zoom: float
     panning_enabled: bool
@@ -327,7 +321,7 @@ class CytoscapeGraph:
     box_selection_enabled: bool
     renderer: RendererClass
 
-    def __init__(self, elements: Elements, data: RendererClass, zooming_enabled: bool, user_zooming_enabled: bool, zoom: int, min_zoom: float, max_zoom: float, panning_enabled: bool, user_panning_enabled: bool, pan: Pan, box_selection_enabled: bool, renderer: RendererClass) -> None:
+    def __init__(self, elements: Elements, data: RendererClass, zooming_enabled: bool, user_zooming_enabled: bool, zoom: float, min_zoom: float, max_zoom: float, panning_enabled: bool, user_panning_enabled: bool, pan: Pan, box_selection_enabled: bool, renderer: RendererClass) -> None:
         self.elements = elements
         self.data = data
         self.zooming_enabled = zooming_enabled
@@ -348,7 +342,7 @@ class CytoscapeGraph:
         data = RendererClass.from_dict(obj.get("data"))
         zooming_enabled = from_bool(obj.get("zoomingEnabled"))
         user_zooming_enabled = from_bool(obj.get("userZoomingEnabled"))
-        zoom = from_int(obj.get("zoom"))
+        zoom = from_float(obj.get("zoom"))
         min_zoom = from_float(obj.get("minZoom"))
         max_zoom = from_float(obj.get("maxZoom"))
         panning_enabled = from_bool(obj.get("panningEnabled"))
@@ -364,7 +358,7 @@ class CytoscapeGraph:
         result["data"] = to_class(RendererClass, self.data)
         result["zoomingEnabled"] = from_bool(self.zooming_enabled)
         result["userZoomingEnabled"] = from_bool(self.user_zooming_enabled)
-        result["zoom"] = from_int(self.zoom)
+        result["zoom"] = to_float(self.zoom)
         result["minZoom"] = to_float(self.min_zoom)
         result["maxZoom"] = to_float(self.max_zoom)
         result["panningEnabled"] = from_bool(self.panning_enabled)

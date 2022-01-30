@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Generator node modules
-music_json_convert/node_modules/
+js_utils/node_modules/

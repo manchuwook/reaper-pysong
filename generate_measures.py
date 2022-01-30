@@ -70,7 +70,7 @@ def load_from_json():
 
 
 def load_from_cytoscape():
-    file = open("music_json_convert/graph.json")
+    file = open("js_utils/graph.json")
     graph = cg.cytoscape_graph_from_dict(json.loads(file.read()))
     g = nx.DiGraph()
 
@@ -78,7 +78,9 @@ def load_from_cytoscape():
         g.add_node(node.data.label,
                    id=node.data.id,
                    beat=node.data.beat,
-                   duration=node.data.duration)
+                   duration=node.data.duration,
+                   y=node.position.y,
+                   x=node.position.x)
     for edge in graph.elements.edges:
         g.add_edge(u_of_edge=edge.data.source_label,
                    v_of_edge=edge.data.target_label,
@@ -124,14 +126,16 @@ def generate_measures(measures_len):
 
             # Loop through each successor (inbound edge)
             for ss in ssors:
-                # Add the node to the values array
-                labelChoices.append(ss)
-
                 # Get the weights for the selected successor
                 nextWeight = g.edges[label, ss]['weight']
 
-                # Add the weight to the choices weights
-                choiceWeights.append(float(nextWeight))
+                # If the weight is -1, don't add the successor
+                if nextWeight > -1:
+                    # Add the node to the values array
+                    labelChoices.append(ss)
+
+                    # Add the weight to the choices weights
+                    choiceWeights.append(float(nextWeight))
 
             # There has to be more than one choice to randomize
             if(len(labelChoices) > 1):
@@ -301,13 +305,13 @@ def len_beats(duration):
 
 
 if __name__ == '__main__':
-    # load_from_cytoscape()
+    load_from_cytoscape()
     rebalance_graph(
-        wn_weight=-0.51, hn_weight=0.251, qn_weight=0.51, en_weight=-0.51, sn_weight=-0.91,
-        wr_weight=-0.52, hr_weight=-0.252, qr_weight=0.52, er_weight=-0.52, sr_weight=-0.92,
+        wn_weight=-1.0, hn_weight=-1.0, qn_weight=0.51, en_weight=-0.51, sn_weight=-0.91,
+        wr_weight=-1.0, hr_weight=-1.0, qr_weight=0.52, er_weight=-0.52, sr_weight=-0.92,
         dhn_weight=-0.53, dqn_weight=0.253, den_weight=0.53, dsn_weight=-0.53,
-        dhr_weight=-0.54, dqr_weight=-0.253, der_weight=0.754, dsr_weight=-0.754,
-        triplets=-0.65
+        dhr_weight=-1.0, dqr_weight=-0.253, der_weight=0.754, dsr_weight=-0.754,
+        triplets=-1.0
     )
     with open('s:\\dev\\measure_4.json', 'w') as outfile1:
         out4 = generate_measures(4)
