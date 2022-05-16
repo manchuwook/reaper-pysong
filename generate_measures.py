@@ -1,4 +1,6 @@
 from email import message
+import io
+import os
 import sys
 import argparse
 import json
@@ -130,7 +132,7 @@ def generate_measures(measures_len):
                 nextWeight = g.edges[label, ss]['weight']
 
                 # If the weight is -1, don't add the successor
-                if nextWeight > -1:
+                if nextWeight > -0.999:
                     # Add the node to the values array
                     labelChoices.append(ss)
 
@@ -150,6 +152,14 @@ def generate_measures(measures_len):
 
                 # Rescale the weights to sum to 1
                 scaledWeights = normWeights / normWeights.sum()
+
+                # Print scaledWeights for debugging
+                # print(scaledWeights)
+                array_sum = sum(scaledWeights)
+                array_has_nan = isnan(array_sum)
+
+                if array_has_nan:
+                    return '0.'
 
                 # Randomly select the next note based on their
                 # normalized and scaled weights
@@ -199,6 +209,51 @@ def rebalance_graph(
     dhr_weight=0.1, dqr_weight=0.1, der_weight=0.1, dsr_weight=0.1,
     triplets=0.1
 ):
+    """
+    Rebalance the weights of the music graph
+
+    Parameters
+    ----------
+    wn_weight: float
+        Whole Note Probability from -1 to +1
+        wn_weight
+    hn_weight: float
+        Half Note Probability from -1 to +1
+    qn_weight: float
+        Quarter Note Probability from -1 to +1
+    en_weight: float
+        Eighth Note Probability from -1 to +1
+    sn_weight: float
+        Sixteenth Note Probability from -1 to +1
+    wr_weight: float
+        Whole Rest Probability from -1 to +1
+    hr_weight: float
+        Half Rest Probability from -1 to +1
+    qr_weight: float
+        Quarter Rest Probability from -1 to +1
+    er_weight: float
+        Eighth Rest Probability from -1 to +1
+    sr_weight: float
+        Sixteenth Rest Probability from -1 to +1
+    dhn_weight: float
+        Dotted Half Note Probability from -1 to +1
+    dqn_weight: float
+        Dotted Quarter Note Probability from -1 to +1
+    den_weight: float
+        Dotted Eighth Note Probability from -1 to +1
+    dsn_weight: float
+        Dotted Sixteenth Note Probability from -1 to +1
+    dhr_weight: float
+        Dotted Half Rest Probability from -1 to +1
+    dqr_weight: float
+        Dotted Quarter Rest Probability from -1 to +1
+    der_weight: float
+        Dotted Eighth Rest Probability from -1 to +1
+    dsr_weight: float
+        Dotted Sixteenth Rest Probability from -1 to +1
+    triplets: float
+        Triplet Probability from -1 to +1
+    """
     g: nx.DiGraph = nx.read_graphml('g.graphml')
     for u, v, w in g.edges.data('weight'):
         dur = g.nodes[v]['duration']
@@ -306,6 +361,93 @@ def len_beats(duration):
 
 if __name__ == '__main__':
     load_from_cytoscape()
+
+    def write_files(pattern_name: str = 'default'):
+        if not os.path.exists('s:\\dev\\song_patterns\\' + pattern_name):
+            os.makedirs('s:\\dev\\song_patterns\\' + pattern_name)
+
+        # region Generate files
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\measure_4.json', 'w') as outfile1:
+            out4 = generate_measures(4)
+            json.dump(out4, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\verse_4.json', 'w') as outfile1:
+            out4 = generate_measures(4)
+            json.dump(out4, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\chorus_4.json', 'w') as outfile1:
+            out4 = generate_measures(4)
+            json.dump(out4, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\preverse_4.json', 'w') as outfile1:
+            out4 = generate_measures(4)
+            json.dump(out4, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\prechorus_4.json', 'w') as outfile1:
+            out4 = generate_measures(4)
+            json.dump(out4, outfile1)
+
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\measure_8.json', 'w') as outfile1:
+            out8 = generate_measures(8)
+            json.dump(out8, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\verse_8.json', 'w') as outfile1:
+            out8 = generate_measures(8)
+            json.dump(out8, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\chorus_8.json', 'w') as outfile1:
+            out8 = generate_measures(8)
+            json.dump(out8, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\preverse_8.json', 'w') as outfile1:
+            out8 = generate_measures(8)
+            json.dump(out8, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\prechorus_8.json', 'w') as outfile1:
+            out8 = generate_measures(8)
+            json.dump(out8, outfile1)
+
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\measure_16.json', 'w') as outfile1:
+            out16 = generate_measures(16)
+            json.dump(out16, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\verse_16.json', 'w') as outfile2:
+            out16 = generate_measures(16)
+            json.dump(out16, outfile2)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\chorus_16.json', 'w') as outfile2:
+            out16 = generate_measures(16)
+            json.dump(out16, outfile2)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\preverse_16.json', 'w') as outfile2:
+            out16 = generate_measures(16)
+            json.dump(out16, outfile2)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\prechorus_16.json', 'w') as outfile2:
+            out16 = generate_measures(16)
+            json.dump(out16, outfile2)
+
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\measure_32.json', 'w') as outfile1:
+            out32 = generate_measures(32)
+            json.dump(out32, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\verse_32.json', 'w') as outfile3:
+            out64 = generate_measures(32)
+            json.dump(out64, outfile3)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\chorus_32.json', 'w') as outfile3:
+            out64 = generate_measures(32)
+            json.dump(out64, outfile3)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\preverse_32.json', 'w') as outfile3:
+            out64 = generate_measures(32)
+            json.dump(out64, outfile3)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\prechorus_32.json', 'w') as outfile3:
+            out64 = generate_measures(32)
+            json.dump(out64, outfile3)
+
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\measure_64.json', 'w') as outfile1:
+            out64 = generate_measures(64)
+            json.dump(out64, outfile1)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\verse_64.json', 'w') as outfile4:
+            out64 = generate_measures(64)
+            json.dump(out64, outfile4)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\chorus_64.json', 'w') as outfile4:
+            out64 = generate_measures(64)
+            json.dump(out64, outfile4)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\preverse_64.json', 'w') as outfile4:
+            out64 = generate_measures(64)
+            json.dump(out64, outfile4)
+        with open('s:\\dev\\song_patterns\\' + pattern_name + '\\prechorus_64.json', 'w') as outfile4:
+            out64 = generate_measures(64)
+            json.dump(out64, outfile4)
+        # endregion
+
     rebalance_graph(
         wn_weight=-1.0, hn_weight=-1.0, qn_weight=0.51, en_weight=-0.51, sn_weight=-0.91,
         wr_weight=-1.0, hr_weight=-1.0, qr_weight=0.52, er_weight=-0.52, sr_weight=-0.92,
@@ -313,82 +455,84 @@ if __name__ == '__main__':
         dhr_weight=-1.0, dqr_weight=-0.253, der_weight=0.754, dsr_weight=-0.754,
         triplets=-1.0
     )
-    with open('s:\\dev\\measure_4.json', 'w') as outfile1:
-        out4 = generate_measures(4)
-        json.dump(out4, outfile1)
-    with open('s:\\dev\\verse_4.json', 'w') as outfile1:
-        out4 = generate_measures(4)
-        json.dump(out4, outfile1)
-    with open('s:\\dev\\chorus_4.json', 'w') as outfile1:
-        out4 = generate_measures(4)
-        json.dump(out4, outfile1)
-    with open('s:\\dev\\preverse_4.json', 'w') as outfile1:
-        out4 = generate_measures(4)
-        json.dump(out4, outfile1)
-    with open('s:\\dev\\prechorus_4.json', 'w') as outfile1:
-        out4 = generate_measures(4)
-        json.dump(out4, outfile1)
+    write_files()
 
-    with open('s:\\dev\\measure_8.json', 'w') as outfile1:
-        out8 = generate_measures(8)
-        json.dump(out8, outfile1)
-    with open('s:\\dev\\verse_8.json', 'w') as outfile1:
-        out8 = generate_measures(8)
-        json.dump(out8, outfile1)
-    with open('s:\\dev\\chorus_8.json', 'w') as outfile1:
-        out8 = generate_measures(8)
-        json.dump(out8, outfile1)
-    with open('s:\\dev\\preverse_8.json', 'w') as outfile1:
-        out8 = generate_measures(8)
-        json.dump(out8, outfile1)
-    with open('s:\\dev\\prechorus_8.json', 'w') as outfile1:
-        out8 = generate_measures(8)
-        json.dump(out8, outfile1)
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=0.51, en_weight=-0.51, sn_weight=-0.91,
+        wr_weight=-1, hr_weight=-1, qr_weight=0.52, er_weight=-0.52, sr_weight=-0.92,
+        dhn_weight=-0.53, dqn_weight=0.253, den_weight=0.53, dsn_weight=-0.53,
+        dhr_weight=-1, dqr_weight=-0.253, der_weight=0.75, dsr_weight=-0.754, triplets=-1
+    )
+    write_files('slow')
 
-    with open('s:\\dev\\measure_16.json', 'w') as outfile1:
-        out16 = generate_measures(16)
-        json.dump(out16, outfile1)
-    with open('s:\\dev\\verse_16.json', 'w') as outfile2:
-        out16 = generate_measures(16)
-        json.dump(out16, outfile2)
-    with open('s:\\dev\\chorus_16.json', 'w') as outfile2:
-        out16 = generate_measures(16)
-        json.dump(out16, outfile2)
-    with open('s:\\dev\\preverse_16.json', 'w') as outfile2:
-        out16 = generate_measures(16)
-        json.dump(out16, outfile2)
-    with open('s:\\dev\\prechorus_16.json', 'w') as outfile2:
-        out16 = generate_measures(16)
-        json.dump(out16, outfile2)
+    rebalance_graph(
+        wn_weight=0.5, hn_weight=0.666, qn_weight=-0.5, en_weight=-0.51, sn_weight=-0.91,
+        wr_weight=-1, hr_weight=-1, qr_weight=-0.666, er_weight=-0.52, sr_weight=-
+        0.92, dhn_weight=-0.53, dqn_weight=-0.333, den_weight=0.53, dsn_weight=0.125,
+        dhr_weight=-1, dqr_weight=-0.253, der_weight=0.75, dsr_weight=-0.754, triplets=-1
+    )
+    write_files('quarters')
 
-    with open('s:\\dev\\measure_32.json', 'w') as outfile1:
-        out32 = generate_measures(32)
-        json.dump(out32, outfile1)
-    with open('s:\\dev\\verse_32.json', 'w') as outfile3:
-        out64 = generate_measures(32)
-        json.dump(out64, outfile3)
-    with open('s:\\dev\\chorus_32.json', 'w') as outfile3:
-        out64 = generate_measures(32)
-        json.dump(out64, outfile3)
-    with open('s:\\dev\\preverse_32.json', 'w') as outfile3:
-        out64 = generate_measures(32)
-        json.dump(out64, outfile3)
-    with open('s:\\dev\\prechorus_32.json', 'w') as outfile3:
-        out64 = generate_measures(32)
-        json.dump(out64, outfile3)
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=1, en_weight=-1, sn_weight=-1, wr_weight=-1,
+        hr_weight=-1, qr_weight=0.333, er_weight=-1, sr_weight=-1, dhn_weight=-1,
+        dqn_weight=-1, den_weight=-1, dsn_weight=-1, dhr_weight=-1, dqr_weight=-1,
+        der_weight=-1, dsr_weight=-1, triplets=-1
+    )
+    write_files('eighths')
 
-    with open('s:\\dev\\measure_64.json', 'w') as outfile1:
-        out64 = generate_measures(64)
-        json.dump(out64, outfile1)
-    with open('s:\\dev\\verse_64.json', 'w') as outfile4:
-        out64 = generate_measures(64)
-        json.dump(out64, outfile4)
-    with open('s:\\dev\\chorus_64.json', 'w') as outfile4:
-        out64 = generate_measures(64)
-        json.dump(out64, outfile4)
-    with open('s:\\dev\\preverse_64.json', 'w') as outfile4:
-        out64 = generate_measures(64)
-        json.dump(out64, outfile4)
-    with open('s:\\dev\\prechorus_64.json', 'w') as outfile4:
-        out64 = generate_measures(64)
-        json.dump(out64, outfile4)
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=-1, en_weight=1, sn_weight=-1, wr_weight=-1,
+        hr_weight=-1, qr_weight=-1, er_weight=0.333,
+        sr_weight=-1, dhn_weight=-1, dqn_weight=-1, den_weight=-1, dsn_weight=-1,
+        dhr_weight=-1, dqr_weight=-1, der_weight=-1, dsr_weight=-1, triplets=-1
+    )
+    write_files('sixteenths')
+
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=-1, en_weight=-1, sn_weight=1, wr_weight=-1,
+        hr_weight=-1, qr_weight=-1, er_weight=-1,
+        sr_weight=0.333, dhn_weight=-1, dqn_weight=-1, den_weight=-1, dsn_weight=-1,
+        dhr_weight=-1, dqr_weight=-1, der_weight=-1, dsr_weight=-1, triplets=-1
+    )
+    write_files('8_and_16')
+
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=0.666, en_weight=0.333, sn_weight=-1, wr_weight=-1,
+        hr_weight=-1, qr_weight=-1, er_weight=-0.666,
+        sr_weight=-0.666, dhn_weight=-1, dqn_weight=-1, den_weight=-1, dsn_weight=-1,
+        dhr_weight=-1, dqr_weight=-1, der_weight=-1, dsr_weight=-1, triplets=-1
+    )
+    write_files('4_and_8')
+
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=1, en_weight=1, sn_weight=-1, wr_weight=-1,
+        hr_weight=-1, qr_weight=0.333, er_weight=0.333,
+        sr_weight=-1, dhn_weight=-1, dqn_weight=-1, den_weight=-1, dsn_weight=-1,
+        dhr_weight=-1, dqr_weight=-1, der_weight=-1, dsr_weight=-1, triplets=-1
+    )
+    write_files('moar_dots')
+
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=-1, en_weight=-1, sn_weight=-1, wr_weight=-1,
+        hr_weight=-1, qr_weight=-1, er_weight=-1,
+        sr_weight=-1, dhn_weight=-1, dqn_weight=-1, den_weight=1, dsn_weight=1,
+        dhr_weight=-1, dqr_weight=-1, der_weight=0.25, dsr_weight=0.25, triplets=-1
+    )
+    write_files('moar_dots2')
+
+    rebalance_graph(
+        wn_weight=-1, hn_weight=-1, qn_weight=-1, en_weight=-1, sn_weight=-1, wr_weight=-1,
+        hr_weight=-1, qr_weight=-1, er_weight=-1, sr_weight=-1,
+        dhn_weight=-0.25, dqn_weight=1, den_weight=1, dsn_weight=-0.25, dhr_weight=-0.25,
+        dqr_weight=0.25, der_weight=0.25, dsr_weight=-0.25, triplets=-1
+    )
+    write_files('fuzzy_dots')
+
+    rebalance_graph(
+        wn_weight=0.5, hn_weight=0.666, qn_weight=0.75, en_weight=0.125, sn_weight=0.125,
+        wr_weight=-0.8, hr_weight=-0.333, qr_weight=-0.333, er_weight=0.333,
+        sr_weight=0.25, dhn_weight=-1, dqn_weight=-1, den_weight=-1, dsn_weight=-1,
+        dhr_weight=-1, dqr_weight=-1, der_weight=-1, dsr_weight=-1, triplets=-1
+    )
+    write_files('fuzzy')

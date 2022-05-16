@@ -37,6 +37,8 @@ class TrackType(Enum):
     SUB = 'Sub'
 
 
+MASSIVE_X = 'Massive X'
+REAKTOR = 'Reaktor 6 (Native Instruments GmbH) (16ch)'
 BATTERY = 'Battery 4 (Native Instruments GmbH) (32 out)'
 CHORDPOTION = 'ChordPotion'
 MELODICFLOW = 'MelodicFlow'
@@ -85,16 +87,27 @@ def extendTrack(track: reapy.Track, idx: int, collection: reapy.TrackList):
     # region Captain Composer (Default)
     elif track.name == 'Melody':
         cptMelody = track.add_fx(name=CAPTAINMELODY)
+    elif track.name == 'Ambient':
+        massiveX = track.add_fx(name=MASSIVE_X)
+        reaktor = track.add_fx(name=REAKTOR)
     elif track.name == 'Bass':
         cptDeep = track.add_fx(name=CAPTAINDEEP)
     elif track.name == 'Arpeggio':
         cp = track.add_fx(name=CHORDPOTION)
         rSynth = track.add_fx(name=REASYNTH)
+    elif track.name == 'Lead':
+        track.add_fx(name=MELODICFLOW)
+        track.add_fx(name=REASYNTH)
     elif track.name == 'Chords - Scratch':
         cptChords = track.add_fx(name=CAPTAINCHORDS)
         track.add_send(destination=track.project.tracks['Chords'])
+        track.select()
+        RPR.ReorderSelectedTracks(0, 0)
+        track.unselect()
+    elif track.name == 'Chords':
         track.add_send(destination=track.project.tracks['Arpeggio'])
         track.add_send(destination=track.project.tracks['Imitone'])
+        track.add_send(destination=track.project.tracks['Lead'])
         track.select()
         RPR.ReorderSelectedTracks(0, 0)
         track.unselect()
@@ -128,14 +141,14 @@ def makeTracks(project: reapy.Project, composer='Captain'):
         tracks = [
             'Chords - Scratch', 'Chords', 'Arpeggio',
             'Bass', 'Sub', 'Pad', 'Lead',
-            'FX1', 'FX2', 'FX3', 'Rhythmic',
+            'FX1', 'FX2', 'FX3', 'Rhythmic', 'Ambient',
             'Percussion', 'Harmony', 'Melody', 'Imitone'
         ]
     if(composer == 'Orb'):
         tracks = [
             'Chords - Orb', 'Chords', 'Arpeggio - Orb',
             'Bass - Orb', 'Sub', 'Pad', 'Lead',
-            'FX1', 'FX2', 'FX3', 'Rhythmic',
+            'FX1', 'FX2', 'FX3', 'Rhythmic', 'Ambient',
             'Percussion', 'Harmony - Orb', 'Melody - Orb', 'Imitone'
         ]
     tracks.reverse()

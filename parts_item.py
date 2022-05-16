@@ -1,6 +1,7 @@
 import json
 import reapy
 import random
+import os
 from reapy import reascript_api as RPR
 from song_library import SongPart
 from typing import Dict, List
@@ -30,6 +31,9 @@ def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
             # Possible the P_NAME isn't correct
             tk: reapy.Take = mi.active_take
 
+            # Choose pitches in the C Maj. scale
+            cmaj_pitches = [96, 98, 100]
+
             if(track.name == 'Lead'):
                 part_notes = []
                 p = refregions[idx].name
@@ -45,34 +49,28 @@ def addMidiItems(project: reapy.Project, refregions: List[SongPart]):
                 else:
                     sp = 'measure_'
 
-                fileName = "s:\\dev\\" + sp + str(int(end - start)) + ".json"
-                with open(fileName) as infile:
+                file_name = "s:\\dev\\song_patterns\\4_and_8\\" + \
+                    sp + str(int(end - start)) + ".json"
+                with open(file_name) as infile:
                     part_notes = json.load(infile)
-
-                # 40685
 
                 current = 0.0
                 for measure in part_notes:
                     for noteOrRest in measure:
                         if(noteOrRest < 0):
-                            tk.add_note(current, current + noteOrRest, 64, 0, 0,
-                                        False, True, "beats", True)
-                            # The note is a rest, leave a positive space open
+                            # The "note" is a rest, leave a positive space open
+                            tk.add_note(current, current + noteOrRest,
+                                        94, 50, 0,  False, True, "beats", True)
                             current = current + (noteOrRest * -1)
                         elif (noteOrRest > 0):
                             # This is a note
 
-                            # Choose pitches in the C Maj. scale
-                            pitch = random.choice([60, 62, 64, 65,
-                                                  67, 69, 71, 72], 1, [4, 3, 2, 1, 2, 3, 2, 1])
-                            tk.add_note(current, current + noteOrRest, pitch, 100, 0,
+                            pitch = random.choices(population=cmaj_pitches, weights=[
+                                                   1, 1, 1], cum_weights=None, k=1)
+                            tk.add_note(current, current + noteOrRest, pitch[0], 100, 0,
                                         False, False, "beats", True)
                             current = current + noteOrRest
-                # 40038 - File: Export contents as .MID
-
-            # newTk: reapy.Take = RPR.GetSetMediaItemTakeInfo_String(
-            #     tk, 'P_NAME', track.name + ' - ' + refregions[idx].name, 1)
-            mi.update()
+                mi.update()
 
     for idx, track in enumerate(project.tracks):
         # Select the track
